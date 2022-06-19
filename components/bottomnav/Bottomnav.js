@@ -1,32 +1,31 @@
 import React from 'react'
-import {FaBitcoin, } from 'react-icons/fa'
-import { SiBlockchaindotcom } from "react-icons/si";
-import { MdGeneratingTokens } from "react-icons/md";
-import { VscDebug } from "react-icons/vsc";
-import { IoCalendarSharp } from "react-icons/io5";
+import {AiFillContacts} from 'react-icons/ai'
+import {FaHome,FaBloggerB } from 'react-icons/fa'
+import {MdMiscellaneousServices } from "react-icons/md";
+import { IoIosContacts } from "react-icons/io";
 
 export default function Bottomnav() {
   return (
-    <div className='text-white p-[5px] flex justify-around h-[60px] w-[100vw] bg-[black] rounded-t-md z-[999]'>
+    <div className='text-white p-[5px] flex justify-around h-[60px] w-[100vw] bg-[#000826] rounded-t-md z-[999]'>
         <div className='flex flex-col items-center p-[3px]'>
-            <div><FaBitcoin style={{fill: '#548ab6'}}/></div>
-            <div>Crypto</div>
+            <div><FaHome style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>Home</div>
         </div>
         <div className='flex flex-col items-center p-[3px]'>
-            <div><SiBlockchaindotcom style={{fill: '#548ab6'}}/></div>
-            <div className=''>Blockchain</div>
+            <div><MdMiscellaneousServices style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div className=''>Services</div>
         </div>
         <div className='flex flex-col items-center p-[3px]'>
-            <div><MdGeneratingTokens style={{fill: '#548ab6'}}/></div>
-            <div>NFT</div>
+            <div><AiFillContacts style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>Contact Us</div>
         </div>
         <div className='flex flex-col items-center p-[3px]'>
-            <div><VscDebug style={{fill: '#548ab6'}}/></div>
-            <div>Developers</div>
+            <div><IoIosContacts style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>About Us</div>
         </div>
         <div className='flex flex-col items-center p-[3px]'>
-            <div className=''><IoCalendarSharp style={{fill: '#548ab6'}}/></div>
-            <div>Events</div>
+            <div className=''><FaBloggerB style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>Blog</div>
         </div>
     </div>
   )

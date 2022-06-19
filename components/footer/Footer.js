@@ -7,7 +7,7 @@ import logo6 from '../../images/logowhite.png';
 
 export default function Footer() {
   return (
-    <div className='h-[250px] pb-[50px] sm:pb-[0px] flex flex-col items-center justify-center footer'>
+    <div className='h-[auto] pb-[50px] sm:pb-[0px] flex flex-col items-center justify-center footer'>
         <div className='w-[60%] flex flex-col items-center justify-center'>
             <div className='flex w-[100%] items-center justify-center sm:justify-center'>
                 <div onClick={()=> router.push('/')} className='h-[200px] w-[200px] relative cursor-pointer'>
@@ -37,7 +37,7 @@ export default function Footer() {
                 </ul>
             </div>
         </div>
-        <div className='font-[roboto] text-[14px] flex items-center justify-center mt-[10px] text-white'>
+        <div className='font-[roboto] text-[14px] pb-[20px] flex items-center justify-center mt-[10px] text-white'>
             <AiOutlineCopyright style={{paddingRight: '3px', fontSize: 20}}/>Copyright 2022 Xyzacademy, Inc. All rights reserved
         </div>
     </div>

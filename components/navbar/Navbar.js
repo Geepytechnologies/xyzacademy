@@ -34,9 +34,6 @@ export default function Navbar() {
             <div className='h-[160px] w-[160px] relative'>
               <Image src={logo} alt='logo' layout='fill' objectFit='contain'/>
             </div>
-            <div onClick={()=> router.push('/')} className='cursor-pointer'>
-                <h2 className='text-[25px] font-[Montserrat] font-semibold'>Infomatics</h2>
-            </div>
         </div>
         {/* end of logo section */}
         {/* menu section */}
@@ -44,23 +41,23 @@ export default function Navbar() {
             <div className=''>
                 <ul className='flex justify-around'>
                     <div>
-                        <li className='dtext inline  cursor-pointer font-[poppins]'><Link href='/cryptocurrencies'><a>Home</a></Link></li>
-                        <div className='dcol mt-[2px] w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
+                        <li className='dtext inline  cursor-pointer font-[poppins]'><Link href='/'><a>Home</a></Link></li>
+                        <div className='dcol  w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/blockchain'><a>Services</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/services'><a>Services</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/nft'><a>Contact Us</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/contact'><a>Contact Us</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/developers'><a>About Us</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/about'><a>About Us</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/events'><a>Blog</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/blog'><a>Blog</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                 </ul>
@@ -68,23 +65,23 @@ export default function Navbar() {
         </div>
         {/* end of menu section */}
         {/* social icons */}
-        <div className='lg:basis-[25%] lg:flex lg:justify-end hidden lg:block'>
+        <div className='lg:basis-[25%] lg:flex lg:justify-end hidden lg:block '>
             <div className='w-[70%] p-[5px]'>
             <ul className='flex justify-between pr-[20px]'>
-                <li className='inline hover:text-[#548ab6]'>
+                <li className='inline'>
                     <a href='https://twitter.com/infomatics' target='_blank' rel='noreferrer'><FaTwitter style={{fill: '#0c1952'}} /></a>
                 </li>
                 
-                <li className='inline hover:text-[#548ab6]'>
+                <li className='inline'>
                     <a href='https://telegram.com/infomatics' target='_blank' rel='noreferrer'><FaTelegramPlane style={{fill: '#0c1952'}}/></a>
                 </li>
-                <li className='inline hover:text-[#548ab6]'>
+                <li className='inline'>
                     <a href='https://facebook.com/infomatics' target='_blank' rel='noreferrer'><FaFacebook style={{fill: '#0c1952'}}/></a>
                 </li>
-                <li className='inline hover:text-[#548ab6]'>
+                <li className='inline'>
                     <a href='https://instagram.com/infomatics ' target='_blank' rel='noreferrer'><FaInstagram style={{fill: '#0c1952'}}/></a>
                 </li>
-                <li className='inline hover:text-[#548ab6]'>
+                <li className='inline'>
                     <a href='https://instagram.com/infomatics' target='_blank' rel='noreferrer'><FaDiscord style={{fill: '#0c1952'}}/></a>
                 </li>
             </ul>
@@ -99,7 +96,7 @@ export default function Navbar() {
             <RiCloseCircleLine style={{fill: 'hsl(34,100%,47%)'}} />
         </div>
         {/* end of menu icon */}
-        <div ref={side} className='w-[100vw] fixed  border-none z-[100] top-[90px] text-white right-[0px] overflow-hidden absolute sidenavglass max-h-[0px] h-[100vh] md:!hidden transition-[max-height] duration-500 ease-in-out'><Sidenav /></div>
+        <div ref={side} className='w-[100vw] fixed bg-[#0c1952]  border-none z-[100] top-[90px] text-white right-[0px] overflow-hidden absolute sidenavglass max-h-[0px] h-[100vh] md:!hidden transition-[max-height] duration-500 ease-in-out'><Sidenav /></div>
     </div>
   )
 }

@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,6 +16,7 @@ a {
   box-sizing: border-box;
 }
 .about{
+  width: 100vw;
   background-image: url('../images/cryptoglobe3.jpg');
   height: 400px;
   background-repeat: no-repeat;
@@ -24,6 +26,10 @@ a {
 .aboutoverlay{
   background-color: rgba(0,0,0,0.3);
   height: 400px;
+  width: 100vw;
+}
+.cardspace{
+  background-color: #0c1952;
 }
 .dtext{
   color: black;
@@ -33,8 +39,12 @@ a {
 }
 .footer{
   background-color: #0c1952;
+  width: 100vw;
 }
-
+/* .navbtm{
+  background: #000826;
+background: linear-gradient(90deg, rgba(0,8,38,1) 11%, rgba(240,136,0,1) 60%, rgba(12,25,82,1) 95%);
+} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
