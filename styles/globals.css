@@ -5,7 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+/* #0c1952 */
 a {
   color: inherit;
   text-decoration: none;
@@ -13,6 +13,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.about{
+  background-image: url('../images/cryptoglobe3.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.aboutoverlay{
+  background-color: rgba(0,0,0,0.3);
+  height: 400px;
+}
+.dtext{
+  color: black;
+}
+.dtext:hover ~ .dcol{
+  width: 90%;
+}
+.footer{
+  background-color: #0c1952;
 }
 
 @tailwind base;
