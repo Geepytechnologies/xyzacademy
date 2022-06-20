@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -16,7 +16,7 @@ a {
   box-sizing: border-box;
 }
 .about{
-  width: 100vw;
+  /* width: 100vw; */
   background-image: url('../images/cryptoglobe3.jpg');
   height: 400px;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ a {
 .aboutoverlay{
   background-color: rgba(0,0,0,0.3);
   height: 400px;
-  width: 100vw;
+  /* width: 100%; */
 }
 .cardspace{
   background-color: #0c1952;
@@ -39,12 +39,60 @@ a {
 }
 .footer{
   background-color: #0c1952;
-  width: 100vw;
+  /* width: 100vw; */
 }
-/* .navbtm{
+.colortest{
+  background-color: #0c195280;
+}
+.earn-over{
+  filter: opacity(0.9);
+}
+.prac-over{
+  filter: opacity(0.9);
+}
+.mas-over{
+  filter: opacity(0.9);
+}
+.practice{
+  background-image: url('../images/stock1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  filter: saturate(0.5);
+}
+.earn{
+  background-image: url('../images/laptop&coin.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  filter: saturate(0.5);
+  /* filter: grayscale(50%); */
+}
+.mastery{
+  background-image: url('../images/cryptoglobe.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  filter: saturate(0.5);
+}
+ .navbtm{
   background: #000826;
-background: linear-gradient(90deg, rgba(0,8,38,1) 11%, rgba(240,136,0,1) 60%, rgba(12,25,82,1) 95%);
-} */
+background: linear-gradient(90deg, rgba(0,8,38,1) 11%, #f08800 60%, rgba(12,25,82,1) 95%);
+} 
+.cardshadow{
+  box-shadow: -2px -2px 5px 1px rgba(0,0,0,0.4);
+-webkit-box-shadow: -2px -2px 5px 1px rgba(0,0,0,0.4);
+-moz-box-shadow: -2px -2px 5px 1px rgba(0,0,0,0.4);
+}
+.cardimg{
+  background-image: url('../images/logowhite.png');
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.1);
+  /* filter: brightness(0.5); */
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

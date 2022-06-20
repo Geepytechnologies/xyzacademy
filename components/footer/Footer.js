@@ -37,8 +37,9 @@ export default function Footer() {
                 </ul>
             </div>
         </div>
-        <div className='font-[roboto] text-[14px] pb-[20px] flex items-center justify-center mt-[10px] text-white'>
-            <AiOutlineCopyright style={{paddingRight: '3px', fontSize: 20}}/>Copyright 2022 Xyzacademy, Inc. All rights reserved
+        <div className='font-[roboto] text-[14px] pb-[20px] flex flex-col items-center justify-center mt-[10px] text-white'>
+            <div className='flex flex-row items-center justify-center'><AiOutlineCopyright style={{paddingRight: '3px', fontSize: 20}}/>Copyright 2022  Xyzacademy</div>
+            <p>All rights reserved</p>
         </div>
     </div>
   )

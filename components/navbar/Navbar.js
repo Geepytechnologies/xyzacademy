@@ -28,7 +28,7 @@ export default function Navbar() {
         side.current.style.borderTop = '0px';
     }
   return (
-    <div className='text-white h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
+    <div className='text-white w-[100%] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
         {/* logo section */}
         <div className='flex items-center basis-[50%] sm:basis-[50%] md:basis-[30%] lg:[25%]'>
             <div className='h-[160px] w-[160px] relative'>
