@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.css'
 import Courses from '../components/courses/Courses'
 import Services from '../components/services/Services'
 import Comments from '../components/Comments'
+import Challenge from '../components/Challenge'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Navbar />  
       <About />
       <Goals />
+      <Challenge />
       <Services />
       <Courses />
       <Comments />
