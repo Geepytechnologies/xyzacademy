@@ -37,11 +37,31 @@ export default function Comments() {
         dots: true,
         infinite: true,
         autoplay: true,
-        speed: 4000,
-        autoplaySpeed: 4000,
+        speed: 7000,
+        autoplaySpeed: 7000,
         // cssEase: "linear",
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
       };
   return (
     <div className='mb-[30px]'>
