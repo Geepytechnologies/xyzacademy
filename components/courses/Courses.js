@@ -116,17 +116,17 @@ export default function Courses() {
                     </div>
                 </div>
                 <div className=''>
-                    <div className='relative h-[400px] m-[20px] cardshadow border-2 border-white rounded-lg '>
+                    <div className='relative h-[400px] m-[20px] cardshadow border-2 border-white rounded-lg'>
                         <div className='absolute top-0 w-[100%] h-[100%] rounded-lg cardspace'>
                         </div>
-                        <div className='cardimg absolute top-0 w-[100%] h-[100%] rounded-lg '></div>
-                        <div className='cardimg2 absolute top-0 w-[100%] h-[100%] rounded-lg '></div>
+                        <div className='cardimg absolute top-0 w-[100%] h-[100%] rounded-lg'></div>
+                        <div className='cardimg2 absolute top-0 w-[100%] h-[100%] rounded-lg'></div>
                         <div className='absolute top-0 w-[100%] h-[100%] flex flex-col items-center justify-center'>
                             <FaAward style={{fill:'#f08800', fontSize: 40}} />
-                            <p className='text-white font-[700] text-[25px] '>Forex trading</p>
+                            <p className='text-white font-[700] text-[25px]'>Forex trading</p>
                             <p className='text-white font-[600] text-[20px]'>$100</p>
                             <p className='text-white text-center'>Learn from the best forex traders across the globe and become one of the best forex trader in three months</p>
-                            <Link href="/services" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
+                            <Link href="/services" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow'>Get Started</div></Link>
                         </div>
                     </div>
                 </div>
@@ -134,8 +134,8 @@ export default function Courses() {
                     <div className='relative h-[400px] m-[20px] cardshadow border-2 border-white rounded-lg '>
                         <div className='absolute top-0 w-[100%] h-[100%] rounded-lg cardspace'>
                         </div>
-                        <div className='cardimg absolute top-0 w-[100%] h-[100%] rounded-lg '></div>
-                        <div className='cardimg2 absolute top-0 w-[100%] h-[100%] rounded-lg '></div>
+                        <div className='cardimg absolute top-0 w-[100%] h-[100%] rounded-lg'></div>
+                        <div className='cardimg2 absolute top-0 w-[100%] h-[100%] rounded-lg'></div>
                         <div className='absolute top-0 w-[100%] h-[100%] flex flex-col items-center justify-center'>
                             <FaAward style={{fill:'#f08800', fontSize: 40}} />
                             <p className='text-white font-[700] text-[25px] '>Synthetic indices</p>

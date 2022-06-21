@@ -3,6 +3,7 @@ import {FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTelegramPlane, FaBars}
 import {AiOutlineCopyright} from 'react-icons/ai'
 import Image from 'next/image';
 import logo6 from '../../images/logowhite.png';
+import Link from 'next/link';
 
 
 export default function Footer() {
@@ -19,20 +20,20 @@ export default function Footer() {
             <div className='w-[60%] p-[5px] flex items-center justify-around'>
                 <ul className='flex justify-around w-[100%] text-white'>
                     <li className='inline border rounded-full border-[rgba(255,255,255,0.3)] p-[7px] ease-in-out duration-150 transition-[border-color] hover:border-[rgba(255,255,255,0.9)] mr-[3px]'>
-                        <a href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><FaTwitter /></a>
+                        <Link href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><FaTwitter /></Link>
                     </li>
                     
                     <li className='inline  border rounded-full border-[rgba(255,255,255,0.3)] p-[7px] ease-in-out duration-150 transition-[border-color] hover:border-[rgba(255,255,255,0.9)] mr-[3px]'>
-                        <a href='/' target='_self' rel='noreferrer'><FaTelegramPlane /></a>
+                        <Link href='/' target='_self' rel='noreferrer'><FaTelegramPlane /></Link>
                     </li>
                     <li className='inline  border rounded-full border-[rgba(255,255,255,0.3)] p-[7px] ease-in-out duration-150 transition-[border-color] hover:border-[rgba(255,255,255,0.9)] mr-[3px]'>
-                        <a href='/' target='_self' rel='noreferrer'><FaFacebook /></a>
+                        <Link href='/' target='_self' rel='noreferrer'><FaFacebook /></Link>
                     </li>
                     <li className='inline  border rounded-full border-[rgba(255,255,255,0.3)] p-[7px] ease-in-out duration-150 transition-[border-color] hover:border-[rgba(255,255,255,0.9)] mr-[3px]'>
-                        <a href='https://instagram.com/officialxyzacademy?igshid=YmMyMTA2M2Y=' target='_blank' rel='noreferrer'><FaInstagram /></a>
+                        <Link href='https://instagram.com/officialxyzacademy?igshid=YmMyMTA2M2Y=' target='_blank' rel='noreferrer'><FaInstagram /></Link>
                     </li>
                     <li className='inline  border rounded-full border-[rgba(255,255,255,0.3)] p-[7px] ease-in-out duration-150 transition-[border-color] hover:border-[rgba(255,255,255,0.9)] mr-[3px]'>
-                        <a href='https://www.linkedin.com/in/xyz-academy-894959242' target='_blank' rel='noreferrer'><FaLinkedin /></a>
+                        <Link href='https://www.linkedin.com/in/xyz-academy-894959242' target='_blank' rel='noreferrer'><FaLinkedin /></Link>
                     </li>
                 </ul>
             </div>
