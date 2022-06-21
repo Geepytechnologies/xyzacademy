@@ -41,23 +41,23 @@ export default function Navbar() {
             <div className=''>
                 <ul className='flex justify-around'>
                     <div>
-                        <li className='dtext inline  cursor-pointer font-[poppins]'><Link href='/'><a>Home</a></Link></li>
+                        <li className='dtext inline  cursor-pointer font-[poppins]'><Link href='/'>Home</Link></li>
                         <div className='dcol  w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Services</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'>Services</Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Contact Us</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'>Contact Us</Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>About Us</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'>About Us</Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Blog</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'>Blog</Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                 </ul>
@@ -69,20 +69,20 @@ export default function Navbar() {
             <div className='w-[70%] p-[5px]'>
             <ul className='flex justify-between pr-[20px]'>
                 <li className='inline'>
-                    <a href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><FaTwitter style={{fill: '#0c1952'}} /></a>
+                    <Link href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><FaTwitter style={{fill: '#0c1952'}} /></Link>
                 </li>
                 
                 <li className='inline'>
-                    <a href='/' target='_self' rel='noreferrer'><FaTelegramPlane style={{fill: '#0c1952'}}/></a>
+                    <Link href='/' target='_self' rel='noreferrer'><FaTelegramPlane style={{fill: '#0c1952'}}/></Link>
                 </li>
                 <li className='inline'>
-                    <a href='/' target='_self' rel='noreferrer'><FaFacebook style={{fill: '#0c1952'}}/></a>
+                    <Link href='/' target='_self' rel='noreferrer'><FaFacebook style={{fill: '#0c1952'}}/></Link>
                 </li>
                 <li className='inline'>
-                    <a href='https://instagram.com/officialxyzacademy?igshid=YmMyMTA2M2Y=' target='_blank' rel='noreferrer'><FaInstagram style={{fill: '#0c1952'}}/></a>
+                    <Link href='https://instagram.com/officialxyzacademy?igshid=YmMyMTA2M2Y=' target='_blank' rel='noreferrer'><FaInstagram style={{fill: '#0c1952'}}/></Link>
                 </li>
                 <li className='inline'>
-                    <a href='https://www.linkedin.com/in/xyz-academy-894959242' target='_blank' rel='noreferrer'><FaLinkedin style={{fill: '#0c1952'}}/></a>
+                    <Link href='https://www.linkedin.com/in/xyz-academy-894959242' target='_blank' rel='noreferrer'><FaLinkedin style={{fill: '#0c1952'}}/></Link>
                 </li>
             </ul>
             </div>
