@@ -38,7 +38,7 @@ export default function Goals() {
                 <div className='mas-over bg-[#0c195280] w-[100%] h-[100%] rounded-lg '>
                 </div>
                 <div className='flex flex-col items-center justify-center absolute top-0 w-[100%] h-[100%]'>
-                    <p className='text-[#f08800] font-[700] text-[30px]'>Mastery</p>
+                    <p className='text-[#f08800] font-[700] text-[30px]'>Master</p>
                     <p className='text-center text-white'>Mastery starts when you learn and comprehend</p>
                 </div>
             </div>

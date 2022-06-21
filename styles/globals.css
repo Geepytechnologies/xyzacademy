@@ -17,14 +17,14 @@ a {
 }
 .about{
   /* width: 100vw; */
-  background-image: url('../images/cryptoglobe3.jpg');
+  background-image: url('../images/cryptoglobe2.jpg');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .aboutoverlay{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.4);
   height: 400px;
   /* width: 100%; */
 }
@@ -100,7 +100,7 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
   background-color: black;
   opacity: 0.2;
 }
-.img1{
+.image1{
   background-image: url('../images/tradebtc.jpg');
   background-size: cover;
   background-position: center;
@@ -108,7 +108,7 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
 .img1overlay{
   background-color: rgba(12, 25, 82, 0.5);
 }
-.img2{
+.image2{
   background-image: url('../images/cryptocoins.jpg');
   background-size: cover;
   background-position: center;
@@ -116,16 +116,35 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
 .img2overlay{
   background-color: rgba(12, 25, 82, 0.7);
 }
-.divimg{
+.img0{
   background-image: url('../images/chukwuma.jpg');
   background-size: cover;
   /* background-position: center; */
 }
-.divimg2{
+.img1{
   background-image: url('../images/obasi.jpg');
   background-size: cover;
   transform: rotate(40deg);
   /* background-position: center; */
+}
+.img2{
+  background-image: url('../images/chisom.jpeg');
+  background-size: cover;
+  /* background-position: center; */
+}
+.img3{
+  background-image: url('../images/humble.jpeg');
+  background-size: cover;
+  /* background-position: center; */
+}
+.img4{
+  background-image: url('../images/blessing.jpeg');
+  background-size: cover;
+  /* background-position: center; */
+}
+.challimg{
+  background-image: url('../images/logo1.png');
+  background-size: cover;
 }
 
 @tailwind base;

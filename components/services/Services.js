@@ -19,7 +19,7 @@ export default function Services() {
         <div className='w-[95%] h-[400px]'>
         <Slider {...settings} className="">
             <div>
-                <div className='img1 rounded-lg relative h-[400px]'>
+                <div className='image1 rounded-lg relative h-[400px]'>
                     <div className="absolute rounded-lg top-0 w-[100%] h-[100%] img1overlay "></div>
                     <div className='absolute top-0 h-[100%] w-[100%] flex flex-col items-center justify-center'>
                         <h1 className="text-white mx-[8px] text-center text-[25px] sm:text-[40px]">Are you so busy that you can't trade by yourself?</h1>
@@ -28,7 +28,7 @@ export default function Services() {
                 </div>
             </div>
             <div>
-                <div className='img2 rounded-lg relative h-[400px]'>
+                <div className='image2 rounded-lg relative h-[400px]'>
                  <div className="absolute rounded-lg top-0 w-[100%] h-[100%] img2overlay "></div>
                  <div className='absolute top-0 h-[100%] w-[100%] flex flex-col items-center justify-center'>
                     <h1 className="text-white text-center mx-[5px] text-[25px] sm:text-[40px]">Are you looking for a reliable vendor to buy your USDTs?</h1>
