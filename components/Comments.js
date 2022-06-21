@@ -44,7 +44,7 @@ export default function Comments() {
                 <div className='h-[400px] w-[300px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className='divimg2 border-2 border-[#f08800] rounded-full w-[150px] h-[150px] '></div>
-                    <p className='font-[600]'>Obasi Mmeso</p>
+                    <p className='font-[600]'>Obasi Mmes0</p>
                     <p>Student @EBSU</p>
                     </div>
                     <div className='flex items-center justify-center h-[40%]'>
