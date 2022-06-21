@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {useRouter} from 'next/router'
 import Link from 'next/link'
 import logo from '../../images/logo1.png'
-import {FaTwitter, FaFacebook, FaInstagram, FaDiscord, FaTelegramPlane, FaBars} from 'react-icons/fa'
+import {FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTelegramPlane, FaBars} from 'react-icons/fa'
 import {RiCloseCircleLine} from 'react-icons/ri'
 import Sidenav from '../sidenav/Sidenav'
 
@@ -45,19 +45,19 @@ export default function Navbar() {
                         <div className='dcol  w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/services'><a>Services</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Services</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/contact'><a>Contact Us</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Contact Us</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/about'><a>About Us</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>About Us</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/blog'><a>Blog</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Blog</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                 </ul>
@@ -69,20 +69,20 @@ export default function Navbar() {
             <div className='w-[70%] p-[5px]'>
             <ul className='flex justify-between pr-[20px]'>
                 <li className='inline'>
-                    <a href='https://twitter.com/infomatics' target='_blank' rel='noreferrer'><FaTwitter style={{fill: '#0c1952'}} /></a>
+                    <a href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><FaTwitter style={{fill: '#0c1952'}} /></a>
                 </li>
                 
                 <li className='inline'>
-                    <a href='https://telegram.com/infomatics' target='_blank' rel='noreferrer'><FaTelegramPlane style={{fill: '#0c1952'}}/></a>
+                    <a href='/' target='_self' rel='noreferrer'><FaTelegramPlane style={{fill: '#0c1952'}}/></a>
                 </li>
                 <li className='inline'>
-                    <a href='https://facebook.com/infomatics' target='_blank' rel='noreferrer'><FaFacebook style={{fill: '#0c1952'}}/></a>
+                    <a href='/' target='_self' rel='noreferrer'><FaFacebook style={{fill: '#0c1952'}}/></a>
                 </li>
                 <li className='inline'>
-                    <a href='https://instagram.com/infomatics ' target='_blank' rel='noreferrer'><FaInstagram style={{fill: '#0c1952'}}/></a>
+                    <a href='https://instagram.com/officialxyzacademy?igshid=YmMyMTA2M2Y=' target='_blank' rel='noreferrer'><FaInstagram style={{fill: '#0c1952'}}/></a>
                 </li>
                 <li className='inline'>
-                    <a href='https://instagram.com/infomatics' target='_blank' rel='noreferrer'><FaDiscord style={{fill: '#0c1952'}}/></a>
+                    <a href='https://www.linkedin.com/in/xyz-academy-894959242' target='_blank' rel='noreferrer'><FaLinkedin style={{fill: '#0c1952'}}/></a>
                 </li>
             </ul>
             </div>

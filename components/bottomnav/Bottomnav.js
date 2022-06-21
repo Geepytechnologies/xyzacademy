@@ -6,7 +6,7 @@ import { IoIosContacts } from "react-icons/io";
 
 export default function Bottomnav() {
   return (
-    <div className='text-white p-[5px] flex justify-around h-[60px] w-[100vw] navbtm rounded-t-lg z-[999] border-[white] border-t'>
+    <div className='text-white p-[5px] flex justify-around h-[70px] w-[100vw] navbtm rounded-t-lg z-[999] border-[white] border-t'>
         <div className='flex flex-col items-center p-[3px]'>
             <div><FaHome style={{fill: 'hsl(34,100%,47%)'}}/></div>
             <div>Home</div>

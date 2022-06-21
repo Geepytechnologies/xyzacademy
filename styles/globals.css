@@ -29,7 +29,12 @@ a {
   /* width: 100%; */
 }
 .cardspace{
-  background-color: #0c1952;
+  /* background-color: #0c1952; */
+  /* background-image: linear-gradient(to right bottom, #0c1952, #00517c, #23858f, #87b6a2, #dde5cb); */
+  background: rgb(12,25,82);
+/* background: linear-gradient(180deg, rgba(12,25,82,1) 11%, rgba(138,142,163,1) 57%, rgba(143,146,166,1) 63%, rgba(146,149,168,1) 70%, rgba(150,153,171,1) 74%, rgba(12,25,82,1) 91%); */
+/* background: linear-gradient(180deg, rgba(12,25,82,1) 11%, rgba(150,153,171,1) 84%); */
+background: linear-gradient(0deg, rgba(12,25,82,1) 11%, rgba(150,153,171,1) 84%);
 }
 .dtext{
   color: black;
@@ -77,7 +82,7 @@ a {
 }
  .navbtm{
   background: #000826;
-background: linear-gradient(90deg, rgba(0,8,38,1) 11%, #f08800 60%, rgba(12,25,82,1) 95%);
+background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25,82,1) 95%);
 } 
 .cardshadow{
   box-shadow: -2px -2px 5px 1px rgba(0,0,0,0.4);
@@ -91,7 +96,31 @@ background: linear-gradient(90deg, rgba(0,8,38,1) 11%, #f08800 60%, rgba(12,25,8
   filter: opacity(0.1);
   /* filter: brightness(0.5); */
 }
-
+.cardimg2{
+  background-color: black;
+  opacity: 0.2;
+}
+.img1{
+  background-image: url('../images/tradebtc.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img1overlay{
+  background-color: rgba(12, 25, 82, 0.5);
+}
+.img2{
+  background-image: url('../images/cryptocoins.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img2overlay{
+  background-color: rgba(12, 25, 82, 0.7);
+}
+.divimg{
+  background-image: url('../images/chukwuma.jpg');
+  background-size: cover;
+  /* background-position: center; */
+}
 
 @tailwind base;
 @tailwind components;

@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaTwitter, FaFacebook, FaInstagram, FaDiscord, FaTelegramPlane, FaBars} from 'react-icons/fa'
+import {FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTelegramPlane, FaBars} from 'react-icons/fa'
 import {AiOutlineCopyright, AiFillContacts} from 'react-icons/ai'
 import {FaHome,FaBloggerB } from 'react-icons/fa'
 import {MdMiscellaneousServices } from "react-icons/md";
@@ -16,39 +16,39 @@ export default function Sidenav() {
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02]  py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><MdMiscellaneousServices style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div className=''><Link href='/services'><a>Services</a></Link></div>
+            <div className=''><Link href='/'><a>Services</a></Link></div>
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02] py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><AiFillContacts style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div><Link href='/contact'><a>Contact us</a></Link></div>
+            <div><Link href='/'><a>Contact us</a></Link></div>
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02] py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><IoIosContacts style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div className=''><Link href='/about'><a>About us</a></Link></div>
+            <div className=''><Link href='/'><a>About us</a></Link></div>
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02]  py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><FaBloggerB style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div><Link href='/blog'><a>Blog</a></Link></div>
+            <div><Link href='/'><a>Blog</a></Link></div>
         </div>
     </div>
         <div>
             <div className='w-[100%] p-[5px] flex items-center justify-center'>
                 <ul className='flex justify-around pr-[20px] w-[80%]'>
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>
-                        <a href='https://twitter.com/infomatics' target='_blank' rel='noreferrer'><FaTwitter /></a>
+                        <a href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><FaTwitter /></a>
                     </li>
                     
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>
-                        <a href='https://telegram.com/infomatics' target='_blank' rel='noreferrer'><FaTelegramPlane /></a>
+                        <a href='/' target='_self' rel='noreferrer'><FaTelegramPlane /></a>
                     </li>
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>
-                        <a href='https://facebook.com/infomatics' target='_blank' rel='noreferrer'><FaFacebook /></a>
+                        <a href='/' target='_self' rel='noreferrer'><FaFacebook /></a>
                     </li>
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>
-                        <a href='https://instagram.com/infomatics ' target='_blank' rel='noreferrer'><FaInstagram /></a>
+                        <a href='https://instagram.com/officialxyzacademy?igshid=YmMyMTA2M2Y=' target='_blank' rel='noreferrer'><FaInstagram /></a>
                     </li>
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>
-                        <a href='https://instagram.com/infomatics' target='_blank' rel='noreferrer'><FaDiscord /></a>
+                        <a href='https://www.linkedin.com/in/xyz-academy-894959242' target='_blank' rel='noreferrer'><FaLinkedin  /></a>
                     </li>
                 </ul>
             </div>

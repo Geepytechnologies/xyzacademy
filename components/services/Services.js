@@ -1,90 +1,43 @@
 import React from 'react'
-import {MdMiscellaneousServices } from "react-icons/md";
-import {FaAward} from "react-icons/fa";
-import Card from '../Card';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
 
 export default function Services() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 3000,
+        autoplay: true,
+        speed: 4000,
         autoplaySpeed: 4000,
-        pauseOnHover: false,
-        autoplay: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-        ]
+        // cssEase: "linear",
+        slidesToShow: 1,
+        slidesToScroll: 1
       };
   return (
-      <div className='flex flex-col items-center justify-center'>
-        <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-row items-center justify-center'>
-                <MdMiscellaneousServices style={{fill: 'hsl(34,100%,47%)',marginRight:10, fontSize: 20 }} />
-                <h3 className='font-[600]'>Services</h3>
+    <div className='h-[400px] w-[100%] flex items-center justify-center mb-[50px]'>
+        <div className='w-[95%] h-[400px]'>
+        <Slider {...settings} className="">
+            <div>
+                <div className='img1 rounded-lg relative h-[400px]'>
+                    <div className="absolute rounded-lg top-0 w-[100%] h-[100%] img1overlay "></div>
+                    <div className='absolute top-0 h-[100%] w-[100%] flex flex-col items-center justify-center'>
+                        <h1 className="text-white mx-[8px] text-center text-[25px] sm:text-[40px]">Are you so busy that you can't trade by yourself?</h1>
+                        <h2 className="text-white text-center m-[5px] text-[20px]">Let us manage your account and increase your portfolio without you having to sit down all day observing the market</h2>
+                    </div>
+                </div>
             </div>
-            <h3 className='font-[500]'>Crypto | Forex | Tech</h3>
-        </div> 
-        {/* card */}
-        <div className='w-[95%]'>
-            <Slider {...settings} className='mb-[40px]'>
-                <div className=''>
-                    <div className='relative h-[400px] m-[20px] cardshadow border-2 border-white   rounded-lg '>
-                        <div className='absolute top-0 w-[100%] h-[100%] rounded-lg cardspace'>
-                        </div>
-                        <div className='cardimg absolute top-0 w-[100%] h-[100%] rounded-lg '></div>
-                        <div className='absolute top-0 w-[100%] h-[100%] flex flex-col items-center justify-center'>
-                            <FaAward style={{fill:'#f08800', fontSize: 40}} />
-                            <p className='text-white font-[700] text-[25px] '>Crypto trading</p>
-                            <p className='text-white font-[600] text-[20px]'>$100</p>
-                            <div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl border border-white cardshadow '>Get Started</div>
-                        </div>
-                    </div>
+            <div>
+                <div className='img2 rounded-lg relative h-[400px]'>
+                 <div className="absolute rounded-lg top-0 w-[100%] h-[100%] img2overlay "></div>
+                 <div className='absolute top-0 h-[100%] w-[100%] flex flex-col items-center justify-center'>
+                    <h1 className="text-white text-center mx-[5px] text-[25px] sm:text-[40px]">Are you looking for a reliable vendor to buy your USDTs?</h1>
+                    <h2 className="text-white text-center  text-[20px]">Click here to buy now</h2>
                 </div>
-                <div className=''>
-                    <div className='cardshadow border-2 border-white h-[400px] m-[20px] cardspace rounded-lg flex flex-col items-center justify-center'>
-                    <p className='text-white font-[700] text-[25px] '>Forex</p>
-                    <p className='text-white font-[600] text-[20px]'>$100</p>
-                    <div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl border border-white '>Get Started</div>
-                    </div>
                 </div>
-                <div>
-                    <div className='cardshadow border-2 border-white h-[400px] m-[20px] cardspace rounded-lg flex flex-col items-center justify-center'>
-                    <p className='text-white font-[700] text-[25px] '>Synthetic Indices</p>
-                    <p className='text-white font-[600] text-[20px]'>$100</p>
-                    <div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl border border-white '>Get Started</div>
-                    </div>
-                </div>
-                <div>
-                    <div className='cardshadow border-2 border-white h-[400px] m-[20px] cardspace rounded-lg flex flex-col items-center justify-center'>
-                    <p className='text-white font-[700] text-[25px] '>Stocks and Commodities</p>
-                    <p className='text-white font-[600] text-[20px]'>$100</p>
-                    <div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl border border-white '>Get Started</div>
-                    </div>
-                </div>
-            </Slider>
+            </div>
+           
+        </Slider>
         </div>
     </div>
   )
