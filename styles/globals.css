@@ -17,14 +17,15 @@ a {
 }
 .about{
   /* width: 100vw; */
-  background-image: url('../images/cryptoglobe2.jpg');
+  background-image: url('../images/btc.jpg');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  filter: saturate(35%) blur(1px);
 }
 .aboutoverlay{
-  background-color: rgba(0,0,0,0.4);
+  background-color: #0c195280;
   height: 400px;
   /* width: 100%; */
 }
@@ -146,7 +147,27 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
   background-image: url('../images/logo1.png');
   background-size: cover;
 }
+.shadow{
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+/* color: #f8f8f8; */
+}
+
+
+/* payment */
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 5% auto;
+  height: 430px;
+  background: white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

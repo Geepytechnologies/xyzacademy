@@ -36,9 +36,9 @@ export default function Comments() {
     const settings = {
         dots: true,
         infinite: true,
-        autoplay: true,
-        speed: 7000,
-        autoplaySpeed: 7000,
+        autoplay: false,
+        speed: 4000,
+        // autoplaySpeed: 7000,
         // cssEase: "linear",
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -69,10 +69,10 @@ export default function Comments() {
             <AiOutlineComment style={{marginRight: 10,fill: 'hsl(34,100%,47%)',fontSize: 20}} />
             <h2 className='font-[600]'>What our students say</h2>
         </div>
-        <div className='w-[95%]'>
-        <Slider {...settings} className="">
+        <div className='w-[95%] mt-[30px]'>
+        <Slider {...settings} className="pb-[50px]">
             <div>
-                <div className='h-[400px] w-[300px]' >
+                <div className='h-[400px] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className="img0 border-2 border-[#f08800] rounded-full w-[150px] h-[150px]"></div>
                     <p className='font-[600]'>{Comment[0].name}</p>
@@ -89,7 +89,7 @@ export default function Comments() {
                 </div>
             </div>
             <div>
-                <div className='h-[400px] w-[300px]' >
+                <div className='h-[400px] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className="img1 border-2 border-[#f08800] rounded-full w-[150px] h-[150px]"></div>
                     <p className='font-[600]'>{Comment[1].name}</p>
@@ -106,7 +106,7 @@ export default function Comments() {
                 </div>
             </div>
             <div>
-                <div className='h-[400px] w-[300px]' >
+                <div className='h-[400px] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className="img2 border-2 border-[#f08800] rounded-full w-[150px] h-[150px]"></div>
                     <p className='font-[600]'>{Comment[2].name}</p>
@@ -123,7 +123,7 @@ export default function Comments() {
                 </div>
             </div>
             <div>
-                <div className='h-[400px] w-[300px]' >
+                <div className='h-[400px] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className="img3 border-2 border-[#f08800] rounded-full w-[150px] h-[150px]"></div>
                     <p className='font-[600]'>{Comment[3].name}</p>
@@ -140,7 +140,7 @@ export default function Comments() {
                 </div>
             </div>
             <div>
-                <div className='h-[400px] w-[300px]' >
+                <div className='h-[400px] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className="img4 border-2 border-[#f08800] rounded-full w-[150px] h-[150px]"></div>
                     <p className='font-[600]'>{Comment[4].name}</p>

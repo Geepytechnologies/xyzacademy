@@ -10,6 +10,7 @@ import Courses from '../components/courses/Courses'
 import Services from '../components/services/Services'
 import Comments from '../components/Comments'
 import Challenge from '../components/Challenge'
+import Payment from '../components/Payment'
 
 export default function Home() {
   return (

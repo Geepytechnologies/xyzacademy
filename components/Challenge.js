@@ -18,7 +18,7 @@ export default function Challenge() {
             <div className='flex items-center justify-center sm:justify-start flex-row w-[100%] h-[auto]'>
                 <div className='w-[100%] sm:w-[70%]'>     
                     <p className='text-[20px] text-center sm:text-left'>Join so many others as we move from $10 to $100 in the month of july, 2022!</p>
-                    <p className='text-[20px] text-center sm:text-left'>Register now with $64</p>
+                    <p className='text-[20px] text-center sm:text-left'>Register now with $4</p>
                 </div>
             </div>
         </div>

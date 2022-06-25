@@ -31,7 +31,7 @@ export default function Navbar() {
     <div className='text-white w-[100%] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
         {/* logo section */}
         <div className='flex items-center basis-[50%] sm:basis-[50%] md:basis-[30%] lg:[25%]'>
-            <div className='h-[160px] w-[160px] relative'>
+            <div onClick={()=>{router.push('/')}} className='h-[160px] w-[160px] relative cursor-pointer'>
               <Image src={logo} alt='logo' layout='fill' objectFit='contain'/>
             </div>
         </div>
