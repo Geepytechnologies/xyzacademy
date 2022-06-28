@@ -1,26 +1,84 @@
 import React from 'react'
+import {useRouter} from 'next/router'
 import { BsStarFill, BsStarHalf } from 'react-icons/bs'
 
 export default function Sidebar() {
+  const router = useRouter();
+  const myItems = [
+    {
+      id: 1,
+      course: 'Spot trading',
+      description: "Become a profitable spot trader in 90 days even if you don't know anything in crypto trading now!",
+      route: '/Pay'
+    },
+    {
+      id: 2,
+      course:"DeFi",
+      description: "Make more money and more of it as a defi analyst",
+      route: '/'
+    },
+    {
+      id: 3,
+      course:"Crypto Arbitration",
+      description: "Learn how to profitably buy and sell coins and become your own boss"
+    },
+    {
+      id: 4,
+      course:"Futures",
+      description: "Become a better risk manager and make more money on future trades even if you have burnt your portfolio by trying"
+    },
+    {
+      id: 5,
+      course:"Forex trading",
+      description: "Learn from the best forex traders across the globe and become one of the best forex trader in three months"
+    },
+    {
+      id: 6,
+      course:"Synthetic indices",
+      description: "Learn the proven ways to become very rich through synthetic indices"
+    },
+    {
+      id: 7,
+      course:"Technical analysis",
+      description: "Learn the most effective way of risk management and stay profitable in the market"
+    },
+    {
+      id: 8,
+      course:"Graphics Design",
+      description: "Learn the secret of graphical representation of your brand that will make you go global in your first 3 months"
+    },
+    {
+      id: 9,
+      course:"Web development",
+      description: "Learn the easiest way of front end and back end coding"
+    }
+  ]
+  function check(el){
+    return el.course != "DeFi"
+  }
   return (
-    <div>
+    <div className="border w-[60%] md:w-[40%] ml-[5px] lg:w-[100%] p-[10px] my-[20px]">
         <p className="font-[600]">Other Courses</p>
-        <div className='flex flex-row' >
-           <div className='h-[auto] relative rounded-lg mr-[3px] w-[30%] bg-[#0c195280]  '>
-              <div className="h-[100%] absolute top-0 rounded-lg mr-[3px] w-[100%] bg-cover bg-[url('/logo1.png')] "></div>
+       { myItems.filter(check).map((item,index)=>
+      (<div key={index} onClick={()=> router.push(item.route)} className='flex flex-row mb-[30px] border rounded-lg p-[3px]' >
+           <div className='h-[auto] relative rounded-lg mr-[6px] w-[30%] bg-[#0c195280]  '>
+              <div className="h-[100%] absolute top-0 rounded-lg mr-[3px] w-[100%] bg-center bg-cover bg-[url('/logo1.png')] "></div>
            </div>
            <div className="w-[70%]">
-                <p className="font-[600] text-[20px]">Spot trading</p>
+                <p className="font-[600] text-[20px]">{item.course}</p>
                 <div className="flex flex-row">
-                    <BsStarFill  />
-                    <BsStarFill  />
-                    <BsStarFill  />
-                    <BsStarFill  />
-                    <BsStarHalf  />
+                    <BsStarFill style={{fill: '#f08800'}} />
+                    <BsStarFill style={{fill: '#f08800'}} />
+                    <BsStarFill style={{fill: '#f08800'}} />
+                    <BsStarFill style={{fill: '#f08800'}} />
+                    <BsStarFill style={{fill: '#f08800'}} />
+                    {/* <BsStarHalf style={{fill: '#f08800'}} /> */}
                 </div>          
-                <p>Become a profitable spot trader in 90 days even if you don't know anything in crypto trading now!</p>
+                <p>{item.description}</p>
            </div>
         </div>
+    )
+    )} 
     </div>
   )
 }

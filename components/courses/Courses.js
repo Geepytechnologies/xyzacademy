@@ -67,7 +67,7 @@ export default function Courses() {
                             <p className='text-white font-[700] text-[25px] '>Spot trading</p>
                             <p className='text-white font-[600] text-[20px]'>NGN60,000</p>
                             <p className='text-white text-center'>Become a profitable spot trader in 90 days even if you don't know anything in crypto trading now!</p>
-                            <Link href="/Payment" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
+                            <Link href={{pathname:'/Payment',query: {course: 'Spot trading',price:'60000'} }} ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export default function Courses() {
                             <p className='text-white font-[700] text-[25px] '>Crypto Arbitration</p>
                             <p className='text-white font-[600] text-[20px]'>NGN 60,000</p>
                             <p className='text-white text-center'>Learn how to profitably buy and sell coins and become your own boss</p>
-                            <Link href="/Payment" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
+                            <Link href={{pathname:'/Payment',query: {course: 'Crypto Arbitration',price:'60000'} }} ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
                         </div>
                     </div>
                 </div>
@@ -96,10 +96,10 @@ export default function Courses() {
                         <div className="absolute top-0 w-[30%] h-[30%] bg-cover bg-[url('/logowhite.png')] h-[20%]"></div>
                         <div className='absolute top-0 w-[100%] h-[100%] flex flex-col items-center justify-center'>
                             <FaAward style={{fill:'#f08800', fontSize: 40}} />
-                            <p className='text-white font-[700] text-[25px] '>Defi</p>
+                            <p className='text-white font-[700] text-[25px] '>DeFi</p>
                             <p className='text-white font-[600] text-[20px]'>NGN 60,000</p>
                             <p className='text-white text-center'>Make more money and more of it as a defi analyst</p>
-                            <Link href="/Payment" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
+                            <Link href={{pathname:'/Pay',query: {course: 'DeFi',price:'60000'} }} ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Courses() {
                             <p className='text-white font-[700] text-[25px] '>Futures</p>
                             <p className='text-white font-[600] text-[20px]'>NGN 60,000</p>
                             <p className='text-white text-center'>Become a better risk manager and make more money on future trades even if you have burnt your portfolio by trying</p>
-                            <Link href="/Payment" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
+                            <Link href={{pathname:'/Payment',query: {course: 'Futures',price:'60000'} }} ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ export default function Courses() {
                             <p className='text-white font-[700] text-[25px]'>Forex trading</p>
                             <p className='text-white font-[600] text-[20px]'>NGN 60,000</p>
                             <p className='text-white text-center'>Learn from the best forex traders across the globe and become one of the best forex trader in three months</p>
-                            <Link href="/Payment" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow'>Get Started</div></Link>
+                            <Link href={{pathname:'/Payment',query: {course: 'Forex trading',price:'60000'} }} ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow'>Get Started</div></Link>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ export default function Courses() {
                             <p className='text-white font-[700] text-[25px] '>Synthetic indices</p>
                             <p className='text-white font-[600] text-[20px]'>NGN 60,000</p>
                             <p className='text-white text-center'>Learn the proven ways to become very rich through synthetic indices</p>
-                            <Link href="/Payment" ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
+                            <Link href={{pathname:'/Payment',query: {course: 'Forex trading',price:'60000'} }} ><div className='bg-[#f08800] text-center text-white p-[10px] w-[50%] rounded-xl cursor-pointer border border-white mt-[3px] cardshadow '>Get Started</div></Link>
                         </div>
                     </div>
                 </div>

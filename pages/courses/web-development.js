@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../../../components/navbar/Navbar'
+import Navbar from '../../components/navbar/Navbar'
 import Head from 'next/head'
-import Footer from '../../../components/footer/Footer'
-import Bottomnav from '../../../components/bottomnav/Bottomnav'
+import Footer from '../../components/footer/Footer'
+import Bottomnav from '../../components/bottomnav/Bottomnav'
 
 export default function index() {
   return (

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
 import Link from 'next/link'
@@ -7,11 +7,16 @@ import {FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTelegramPlane, FaBars}
 import {RiCloseCircleLine} from 'react-icons/ri'
 import Sidenav from '../sidenav/Sidenav'
 
-export default function Navbar() {
+export default function Navbar(props) {
     const router = useRouter();
     const side = useRef();
     const menu = useRef();
     const close = useRef();
+    const home = useRef();
+    const courses = useRef();
+    const about = useRef();
+    const contact = useRef();
+    const blog = useRef();
     const show = () => {
         document.body.style.overflow = 'hidden';
         menu.current.style.display = 'none';
@@ -27,8 +32,35 @@ export default function Navbar() {
         side.current.style.borderBottom = '0px';
         side.current.style.borderTop = '0px';
     }
+    useEffect(()=>{
+       if(props && props.active == 'home'){
+       home.current.classList.remove('w-[0px]')
+       home.current.classList.add('bg-[hsl(34,100%,47%)]')
+       home.current.classList.add('w-[90%]')
+       }
+       if(props && props.active == 'courses'){
+       courses.current.classList.remove('w-[0px]')
+       courses.current.classList.add('bg-[hsl(34,100%,47%)]')
+       courses.current.classList.add('w-[90%]')
+       }
+       if(props && props.active == 'about'){
+       about.current.classList.remove('w-[0px]')
+       about.current.classList.add('bg-[hsl(34,100%,47%)]')
+       about.current.classList.add('w-[90%]')
+       }
+       if(props && props.active == 'contact'){
+       contact.current.classList.remove('w-[0px]')
+       contact.current.classList.add('bg-[hsl(34,100%,47%)]')
+       contact.current.classList.add('w-[90%]')
+       }
+       if(props && props.active == 'blog'){
+       blog.current.classList.remove('w-[0px]')
+       blog.current.classList.add('bg-[hsl(34,100%,47%)]')
+       blog.current.classList.add('w-[90%]')
+       }
+    },[])
   return (
-    <div className='text-white w-[100%] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
+    <div className='text-white w-[100%] border-b-2 border-b-[black] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
         {/* logo section */}
         <div className='flex items-center basis-[50%] sm:basis-[50%] md:basis-[30%] lg:[25%]'>
             <div onClick={()=>{router.push('/')}} className='h-[160px] w-[160px] relative cursor-pointer'>
@@ -42,23 +74,23 @@ export default function Navbar() {
                 <ul className='flex justify-around'>
                     <div>
                         <li className='dtext inline  cursor-pointer font-[poppins]'><Link href='/'><a>Home</a></Link></li>
-                        <div className='dcol  w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
+                        <div ref={home} className='dcol w-[0px]  ease-in-out duration-200 h-[3px] rounded-md bg-[hsl(34,100%,47%)] '></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Services</a></Link></li>
-                        <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/courses'><a>Courses</a></Link></li>
+                        <div ref={courses} className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
                         <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Contact Us</a></Link></li>
-                        <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
+                        <div ref={contact} className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>About Us</a></Link></li>
-                        <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/about'><a>About Us</a></Link></li>
+                        <div ref={about} className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
                         <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Blog</a></Link></li>
-                        <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
+                        <div ref={blog} className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                 </ul>
             </div>
