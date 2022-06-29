@@ -3,12 +3,11 @@ import Bottomnav from '../../components/bottomnav/Bottomnav'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/Header'
 import Navbar from '../../components/navbar/Navbar'
-import Image from 'next/image'
 import { BsStarFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
 import { VscBook } from 'react-icons/vsc'
 
-export default function index() {
+export default function Index() {
   const router = useRouter();
   const Intro = ()=>{
     return(
