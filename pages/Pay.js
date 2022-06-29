@@ -112,7 +112,7 @@ export default function Pay() {
     <>
     <Header />
     <Navbar active="courses" />
-      <div className="container flex-col md:flex-row w-[90%] pb-[30px] md:w-[50%]">
+      <div className="container flex-col md:flex-row w-[90%] pb-[30px] mb-[100px] md:w-[50%]">
         <div className="bg-[#f8f8f8] w-[100%] md:w-[40%]">
           <div className="bg-[url('/logo1.png')] bg-cover h-[200px] w-[200px] "></div>
           <div className="flex flex-col items-center justify-center">

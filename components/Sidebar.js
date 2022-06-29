@@ -64,14 +64,14 @@ export default function Sidebar() {
     return el.course != "DeFi"
   }
   return (
-    <div className="border w-[60%] md:w-[40%] ml-[5px] lg:w-[100%] p-[10px] my-[20px]">
+    <div className="border w-[100%] md:w-[60%] lg:w-[100%] ml-[5px] p-[10px] my-[20px]">
         <p className="font-[600]">Other Courses</p>
        { myItems.filter(check).map((item,index)=>
-      (<div key={index} onClick={()=> router.push(item.route)} className='flex flex-row mb-[30px] border rounded-lg p-[3px]' >
-           <div className='h-[auto] relative rounded-lg mr-[6px] w-[30%] bg-[#0c195280]  '>
+      (<div key={index} onClick={()=> router.push(item.route)} className='flex lg:flex-col flex-col md:flex-row mb-[30px] border rounded-lg p-[3px]' >
+           <div className='h-[200px] w-[100%] lg:h-[200px] lg:w-[100%] md:h-[auto] relative rounded-lg mr-[6px] md:w-[30%] bg-[#0c195280]  '>
               <div className="h-[100%] absolute top-0 rounded-lg mr-[3px] w-[100%] bg-center bg-cover bg-[url('/logowhite.png')] "></div>
            </div>
-           <div className="w-[70%]">
+           <div className="md:w-[70%] w-[100%] lg:w-[100%] flex flex-col lg:items-center items-center md:items-start">
                 <p className="font-[600] text-[20px]">{item.course}</p>
                 <div className="flex flex-row">
                     <BsStarFill style={{fill: '#f08800'}} />
@@ -81,7 +81,7 @@ export default function Sidebar() {
                     <BsStarFill style={{fill: '#f08800'}} />
                     {/* <BsStarHalf style={{fill: '#f08800'}} /> */}
                 </div>          
-                <p>{item.description}</p>
+                <p className='text-center md:text-left lg:text-center'>{item.description}</p>
            </div>
         </div>
     )

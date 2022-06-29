@@ -13,8 +13,8 @@ export default function spottrading() {
       <div className='ml-[5px] mt-[30px] flex items-center justify-center'>
         <div className="w-[80%]">
         <div className='w-[100%] flex flex-col  '>
-          <div className="w-[100%] h-[400px] bg-contain bg-no-repeat bg-[url('/Spot-Trading.jpg')]"></div>
-          <p className="font-[700] text-[25px]">Learn Spots Trading</p>
+          <div className="md:w-[400px] sm:w-[300px] sm:h-[300px] h-[200px] w-[200px] md:h-[400px] bg-cover  bg-[url('/Spot-Trading.jpg')]"></div>
+          <p className="font-[700] text-[25px]">Learn Spot Trading</p>
         </div>
         <p className="">The ultimate guide to hoist you onto the path of profitability in spots trading. The spot trading course takes students on a systematic learning process from beginners to advanced level spot traders.</p>
         <div className="flex flex-row items-center">
@@ -58,11 +58,11 @@ export default function spottrading() {
       <Header />
       <Navbar active="courses" />
       <div className="flex flex-col lg:flex-row bg-[#f8f8f8] w-[100%]">
-        <div className="w-[70%]">
+        <div className="md:w-[100%] lg:w-[70%] w-[100%]">
           <Spot />
         </div>
         {/* sidebar */}
-        <div className="w-[100%] flex items-center justify-start lg:w-[30%]">
+        <div className="w-[100%] flex items-center justify-start lg:w-[30%] md:w-[100%]">
           <Sidebar />
         </div>
       </div>

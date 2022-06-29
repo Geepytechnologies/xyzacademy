@@ -26,15 +26,13 @@ input:focus{
 .about{
   /* width: 100vw; */
   background-image: url('../images/btc.jpg');
-  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: saturate(35%) blur(1px);
+  filter: saturate(35%) blur(0px);
 }
 .aboutoverlay{
   background-color: #0c195280;
-  height: 400px;
   /* width: 100%; */
 }
 .cardspace{

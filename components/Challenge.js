@@ -10,10 +10,10 @@ export default function Challenge() {
       }, []);
   return (
     <div data-aos='zoom-in-right' className='mb-[40px] items-center justify-center flex flex-col'>
-        <div className='w-[90%] pl-[5px] mb-[10px]'>
-            <div className="flex flex-row items-center justify-center">
-                <FaHandPointer className='rotate-[180deg] mr-[5px]' style={{fill:'rgba(12,25,82,1)',fontSize: 35}} />
-                <p className='font-[700] text-[#f08800] text-[35px]'>Challenge Yourself</p>
+        <div className='w-[90%] pl-[5px] mb-[10px] '>
+            <div className="flex w-[100%] flex-row items-center justify-center ">
+                <FaHandPointer className=' rotate-[180deg] mr-[5px]' style={{fill:'rgba(12,25,82,1)',fontSize: 35}} />
+                <p className='font-[700] text-[#f08800] text-center text-[35px]'>Challenge Yourself</p>
             </div> 
             <div className='flex items-center justify-center flex-row w-[100%] h-[auto]'>
                 <div className='w-[100%]'>     

@@ -13,7 +13,7 @@ export default function webdevelopment() {
       <div className='ml-[5px] mt-[30px] flex items-center justify-center'>
         <div className="w-[80%]">
         <div className='w-[100%] flex flex-col  '>
-          <div className="w-[100%] h-[400px] bg-no-repeat bg-contain bg-[url('/web-Dev.jpg')]"></div>
+          <div className="md:w-[400px] sm:w-[300px] sm:h-[300px] h-[200px] w-[200px] md:h-[400px] bg-cover bg-[url('/web-Dev.jpg')]"></div>
           <p className="font-[700] text-[25px]">Learn Web Development</p>
           <p>A complete guide on how to become a Web developer from the scratch. </p>
         </div>
@@ -59,11 +59,11 @@ export default function webdevelopment() {
       <Header />
       <Navbar active='courses'/>
       <div className="flex flex-col lg:flex-row bg-[#f8f8f8] w-[100%]">
-        <div className="w-[70%]">
+        <div className="md:w-[100%] lg:w-[70%] w-[100%]">
           <WebDev />
         </div>
         {/* sidebar */}
-        <div className="w-[100%] flex items-center justify-start lg:w-[30%]">
+        <div className="w-[100%] flex items-center justify-start lg:w-[30%] md:w-[100%]">
           <Sidebar />
         </div>
       </div>

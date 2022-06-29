@@ -13,7 +13,7 @@ export default function defi() {
       <div className='ml-[5px] mt-[30px] flex items-center justify-center'>
         <div className="w-[80%]">
         <div className='w-[100%] flex flex-col  '>
-          <div className="w-[100%] h-[400px] bg-[url('/Defi.jpg')]"></div>
+          <div className="md:w-[400px] sm:w-[300px] sm:h-[300px] h-[200px] w-[200px] md:h-[400px] bg-cover bg-[url('/Defi.jpg')]"></div>
           <p className="font-[700] text-[25px]">Learn Decentralized Finance(DeFi)</p>
         </div>
         <p className="">The ultimate guide to unraveling the mystery of the world of Decentralised Finance</p>
@@ -56,11 +56,11 @@ export default function defi() {
       <Header />
       <Navbar active='courses' />
       <div className="flex flex-col lg:flex-row bg-[#f8f8f8] w-[100%]">
-        <div className="w-[70%]">
+        <div className="md:w-[100%] lg:w-[70%] w-[100%]">
           <Defi />
         </div>
         {/* sidebar */}
-        <div className="w-[100%] flex items-center justify-start lg:w-[30%]">
+        <div className="w-[100%] flex items-center justify-start lg:w-[30%] md:w-[100%]">
           <Sidebar />
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function graphicsdesign() {
       <div className='ml-[5px] mt-[30px] flex items-center justify-center'>
         <div className="w-[80%]">
         <div className='w-[100%] flex flex-col  '>
-          <div className="w-[100%] bg-no-repeat bg-contain h-[400px] bg-[url('/Graphics-Design.jpg')]"></div>
+          <div className="md:w-[400px] sm:w-[300px] sm:h-[300px] h-[200px] w-[200px] md:h-[400px] bg-cover bg-[url('/Graphics-Design.jpg')]"></div>
           <p className="font-[700] text-[25px]">Learn Graphics Design</p>
           <p>The best guide to becoming a top skilled graphics designer </p>
         </div>
@@ -59,11 +59,11 @@ export default function graphicsdesign() {
       <Header />
       <Navbar active="courses" />
       <div className="flex flex-col lg:flex-row bg-[#f8f8f8] w-[100%]">
-        <div className="w-[70%]">
+        <div className="md:w-[100%] lg:w-[70%] w-[100%]">
           <Graphics />
         </div>
         {/* sidebar */}
-        <div className="w-[100%] flex items-center justify-start lg:w-[30%]">
+        <div className="w-[100%] flex items-center justify-start lg:w-[30%] md:w-[100%]">
           <Sidebar />
         </div>
       </div>
