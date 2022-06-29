@@ -8,8 +8,16 @@ body {
 }
 /* #0c1952 */
 a {
-  color: inherit;
+  color: none;
+  background-color: transparent;
+  /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
   text-decoration: none;
+}
+a:focus{
+  outline:none !important;
+}
+input:focus{
+  outline: none;
 }
 
 * {
@@ -129,9 +137,9 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
   /* background-position: center; */
 }
 .img2{
-  background-image: url('../images/chisom.jpeg');
+  background-image: url('../public/IMG4.jpg');
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
 }
 .img3{
   background-image: url('../images/humble.jpeg');
@@ -144,8 +152,7 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
   /* background-position: center; */
 }
 .challimg{
-  background-image: url('../images/logo1.png');
-  background-size: cover;
+  background-image: url('../public/IMG_0619.jpg');
 }
 .shadow{
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);

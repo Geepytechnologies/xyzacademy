@@ -62,7 +62,7 @@ export default class Form extends Component {
                         <label>Phone number</label>
                         <input type="text" value={this.state.number} onChange={this.onChangeNumber} className="rounded-xl p-[3px]"  required={true}/>
                     </div>
-                    <button type='submit' className="bg-[#0c1952] text-white w-[40%] md:w-[20%] rounded-md p-[10px]">Submit</button>
+                    <button type='submit' className="bg-[#0c1952] text-white w-[40%] md:w-[20%] rounded-md p-[10px]">Contact Us</button>
                 </div>
             </form>
         // </div>

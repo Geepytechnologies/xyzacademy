@@ -1,3 +1,4 @@
+import React,{useRef,useEffect} from 'react'
 import Image from 'next/image'
 import About from '../components/about/About'
 import Bottomnav from '../components/bottomnav/Bottomnav'
@@ -11,20 +12,31 @@ import Comments from '../components/Comments'
 import Challenge from '../components/Challenge'
 import Payment from '../components/Payment'
 import Header from '../components/Header'
+import Popup from '../components/Popup'
+
 
 export default function Home() {
+  const popup = useRef();
+ /*  useEffect(()=>{
+    setTimeout(()=>{
+      popup.current.style.display = 'block'
+    },20000)
+  },[]) */
   return (
     <div className={styles.container}>
       <Header />
-      <Navbar />  
+      <Navbar active='home' />  
       <About />
+      <div ref={popup} className='hidden' >
+        <Popup />
+      </div>
       <Goals />
       <Challenge />
-      {/* <Services /> */}
+      <Services />
       <Courses />
       <Comments />
       <Footer />
-      <div className='fixed bottom-[0px] sm:hidden w-[100%]'>
+      <div className='fixed h-[70px] bottom-[0px] sm:hidden w-[100%]'>
         <Bottomnav />
       </div>
     </div>

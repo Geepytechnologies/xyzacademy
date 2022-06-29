@@ -60,7 +60,7 @@ export default function Navbar(props) {
        }
     },[])
   return (
-    <div className='text-white w-[100%] border-b-2 border-b-[black] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
+    <div className='text-white w-[100%] border-b shadow-[0_7px_60px_-15px_rgba(0,0,0,0.3)] border-b-[#f7f7f7] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
         {/* logo section */}
         <div className='flex items-center basis-[50%] sm:basis-[50%] md:basis-[30%] lg:[25%]'>
             <div onClick={()=>{router.push('/')}} className='h-[160px] w-[160px] relative cursor-pointer'>

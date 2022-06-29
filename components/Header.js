@@ -7,7 +7,7 @@ export default function Header() {
         <Head>
         <title>Xyzacademy</title>
         <meta name="description" content="XYZ Academy" />
-        <link rel="icon" href="./logo1.png" />
+        <link rel="icon" href="/logo1.png" />
       </Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>

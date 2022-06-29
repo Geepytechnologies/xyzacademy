@@ -16,19 +16,19 @@ export default function Sidenav() {
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02]  py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><MdMiscellaneousServices style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div className=''><Link href='/'><a>Services</a></Link></div>
+            <div className=''><Link href='/courses'><a>Courses</a></Link></div>
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02] py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><AiFillContacts style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div><Link href='/'><a>Contact us</a></Link></div>
+            <div><Link href='/contact'><a>Contact us</a></Link></div>
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02] py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><IoIosContacts style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div className=''><Link href='/'><a>About us</a></Link></div>
+            <div className=''><Link href='/about'><a>About us</a></Link></div>
         </div>
         <div className='flex ml-[4px] flex-row items-center cursor-pointer w-[70%] hover:scale-[1.02]  py-[5px] rounded-r-lg my-[10px]'>
             <div className='mr-[5px]'><FaBloggerB style={{fill: 'hsl(34,100%,47%)'}}/></div>
-            <div><Link href='/'><a>Blog</a></Link></div>
+            <div><Link href='/blog'><a>Blog</a></Link></div>
         </div>
     </div>
         <div>

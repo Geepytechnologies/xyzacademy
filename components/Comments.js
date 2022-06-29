@@ -12,22 +12,22 @@ const Comment= [
     },
     {
         name: 'Obasi Mmeso',
-        comment: "You are all doing a great job and i commend your work Also. I was wondering if you can be doing like a little promo where you'll be giving members of the challenge a chance to be in your masterclass or be giving members account with little funds",
+        comment: "I thought all this was a joke until I did the $10-$100 challenge. Honestly my financial life was lifted. Currently I am doing the $100-$1000 challenge and it has been awesome already.",
         profile: 'Student @EBSU',
     },
     {
         name: 'Charles Chisom',
-        comment: "Thanks to the XYZ community i'm glad to be part of the family and the challenge is just mind blowing. But some of us are yet to be perfect on the classes and i want to urge if there can be a record class and also a live trading. Thanks",
+        comment: "Thanks to XYZ Academy, I am glad to be a part of this community and the journey is mind blowing.",
         profile: 'Student @FUTO',
     },
     {
         name: 'Okechukwu Humble',
-        comment: "Truthfully i've never seen any academy like this. Top notch tutors just full everywhere, Quality knowledge just dey sink in... Sha i dey act as if i dey normal but deep down i just want make dem flip my account to money i never see for this life",
+        comment: "Truthfully the beauty of xyz academy is that it provides its students with top notch tutors, quality and comprehensive knowledge. I act like I am ok, but deep down I want them to flip my account to a huge sum of money. I know at the end of my training... I'll be able to do it just like them.",
         profile: 'Business Man',
     },
     {
         name: 'Chukwuma Blessing',
-        comment: "Thanks for the opportunity and more you have provided us all.",
+        comment: "I am grateful to the XYZ academy for the opportunity and more you have provided for us all",
         profile: 'Student @UNN',
     }
 ]
@@ -37,7 +37,7 @@ export default function Comments() {
         dots: true,
         infinite: true,
         autoplay: false,
-        speed: 4000,
+        speed: 500,
         // autoplaySpeed: 7000,
         // cssEase: "linear",
         slidesToShow: 3,
@@ -69,8 +69,8 @@ export default function Comments() {
             <AiOutlineComment style={{marginRight: 10,fill: 'hsl(34,100%,47%)',fontSize: 20}} />
             <h2 className='font-[600]'>What our students say</h2>
         </div>
-        <div className='w-[95%] mt-[30px]'>
-        <Slider {...settings} className="pb-[50px]">
+        <div className='w-[90%] mt-[30px]'>
+        <Slider {...settings} className="pb-[60px]">
             <div>
                 <div className='h-[400px] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>

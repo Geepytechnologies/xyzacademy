@@ -11,9 +11,9 @@ export default function About() {
   }, []);
   return (
     <div className='relative h-[400px] w-[100%]'>
-      <div className='about absolute top-0 relative'></div>
+      <div className='about w-[100%] absolute top-0 relative'></div>
       <div className='absolute top-0 w-[100%] aboutoverlay'></div>
-      <div className='absolute top-0 w-[100%] sm:w-[50%] m-[3px] h-[100%] flex flex-col justify-center items-center '>
+      <div className='absolute top-0 w-[100%] sm:w-[50%] h-[100%] flex flex-col justify-center items-center '>
         <h1 data-aos="fade-down" className='text-[#f08800] w-[80%]  pl-[5px] font-[700] sm:text-[30px] text-[25px] font-danc '>The best way to master the financial market and make unfair profits from it.</h1>
         <h2 data-aos="zoom-in" className='text-white mt-[3px] mb-[3px] font-pop w-[80%]'>XYZ Academy is a brand that gives you the opportunity to master, practice and earn from the Financial market</h2>
         <h2 data-aos="zoom-in" className='text-white w-[80%]  hidden md:block'>We also teach tech skills that will help you to make more money by solving Problems in business and society at large</h2>
