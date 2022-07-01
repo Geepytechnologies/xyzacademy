@@ -17,18 +17,21 @@ import Popup from '../components/Popup'
 
 export default function Home() {
   const popup = useRef();
- /*  useEffect(()=>{
+  useEffect(()=>{
     setTimeout(()=>{
       popup.current.style.display = 'block'
-    },20000)
-  },[]) */
+    },60000)
+  },[])
+  const hide = () =>{
+    popup.current.style.display = 'none'
+  }
   return (
     <div className={styles.container}>
       <Header />
       <Navbar active='home' />  
       <About />
       <div ref={popup} className='hidden' >
-        <Popup />
+        <Popup hide={hide} />
       </div>
       <Goals />
       <Challenge />

@@ -101,7 +101,7 @@ export default function Navbar(props) {
             <div className='w-[70%] p-[5px]'>
             <ul className='flex justify-between pr-[20px]'>
                 <li className='inline'>
-                    <Link href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><a><FaTwitter style={{fill: '#0c1952'}} /></a></Link>
+                    <Link href='https://twitter.com/XYZ_ACADEMY1?t=Ag7TKGl4s1wzijAQhPtYoA&s=09' target='_blank' rel='noreferrer'><a><FaTwitter style={{fill: '#0c1952'}} /></a></Link>
                 </li>
                 
                 <li className='inline'>

@@ -35,7 +35,7 @@ export default function Sidenav() {
             <div className='w-[100%] p-[5px] flex items-center justify-center'>
                 <ul className='flex justify-around pr-[20px] w-[80%]'>
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>
-                        <Link href='https://twitter.com/XYZ_ACADEMY1?t=OaOAvIp0KXYBDWpzldHIiA&s=09' target='_blank' rel='noreferrer'><a><FaTwitter /></a></Link>
+                        <Link href='https://twitter.com/XYZ_ACADEMY1?t=Ag7TKGl4s1wzijAQhPtYoA&s=09' target='_blank' rel='noreferrer'><a><FaTwitter /></a></Link>
                     </li>
                     
                     <li className='inline hover:text-[hsl(34,100%,47%)]'>

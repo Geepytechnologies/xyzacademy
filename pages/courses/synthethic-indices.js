@@ -16,7 +16,8 @@ export default function synthethicindices() {
           <div className="md:w-[400px] sm:w-[300px] sm:h-[300px] h-[200px] w-[200px] md:h-[400px] bg-cover bg-[url('/Synthehic-Indices.jpg')]"></div>
           <p className="font-[700] text-[25px]">Learn Synthethic Indices</p>
         </div>
-        <p className="">Learn the proven ways to become very rich through synthetic indices</p>
+        <p className="">A complete guide on how to trade synthetic indices.</p>
+        <p>This course is designed to help students learn and master how to become consistently profitable, indices traders.</p>
         <div className="flex flex-row items-center">
           <span className="mr-[5px]">5.0</span>
           <div className="flex flex-row">
@@ -30,21 +31,21 @@ export default function synthethicindices() {
         <p>By Xyz Academy</p>
         <p className='font-[600]'>$100</p>
         {/* what you will learn */}
-        {/* <div>
+        <div>
           <p className="font-[600]">WHAT YOU WILL LEARN</p>
-        </div> */}
-         {/*  <ul className='list-disc'>
-            <li>Introduction to the Decentralised Finance ecosystem</li>
-            <li>Fundamentals of the operational mechanism of blockchain technology</li>
-            <li>How to use Various Protocols to interact in this field, that runs heavily of smart contract algorithms</li>
-            <li>Defi tools, implementations and applications</li>
-          </ul> */}
+        </div>
+          <ul className='list-disc'>
+            <li>You will learn efficient strategies for trading synthetic indices </li>
+            <li>You will learn how to make consistent returns on your investments using proven strategies or methods.</li>
+            <li>You will be trading like a PRO at the end of this course.</li>
+          </ul>
         {/* Description */}
         <div>
-         {/*  <p className="font-[600]">COURSE DESCRIPTION</p>
-          <h2>Decentralized finance(Defi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. Tired of scam projects and rugpulls?</h2> */}
-          {/* <h2>This course will take you through practical experience in Defi investing, you will also be taught the criteria for identifying long term defi projects and so much more.</h2>
-          <h2>Looking for the best knowledge out there in this field?</h2> */}
+          <p className="font-[600]">COURSE DESCRIPTION</p>
+          <h2>This course is designed to teach you how to trade synthetic indices.</h2>
+          <h2>The Synthetic Inidices market is a simulation of the price action movement in the financial markets. It is algorithmically designed, to mimic what goes on in the financial markets (FOREX) and this simulation is secured by cryptographic codes.</h2>
+          <h2>You will be learning so much from this course; it will enlighten you on how to make smart trade decisions on synthetic indices market, plan your trades using well defined entry and exit rules, and also effective methods of sizing your position better to manage your risks and so much more.</h2>
+          <h2>Do you want to make some passive income trading synthetic instruments? </h2>
           <Link href={{pathname:'/Pay',query: {course: 'Synthethic Indices'} }}><a><button className='bg-[black] font-[600] text-white p-[10px] w-[150px] m-[5px] '>Enroll now</button></a></Link>
         </div>
         </div>
