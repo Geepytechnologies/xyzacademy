@@ -11,7 +11,8 @@ export default function Index() {
   const router = useRouter();
   const Intro = ()=>{
     return(
-      <div className='bg-[#f8f9fb] bg-[url(/bg3.jpg)] bg-cover bg-center w-[100%] h-[300px] md:h-[400px] '>    
+      <div className='relative bg-[#f8f9fb] bg-[url(/bg3.jpg)] bg-cover bg-center w-[100%] h-[300px] md:h-[400px] '>    
+       <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-[url('/logowhite.png')] bg-cover "></div>
       </div>
     )
   }
@@ -134,17 +135,30 @@ export default function Index() {
           <p className='font-[700]'>NGN 60,000</p>
         </div>
         <div className='course9 '>
-        <div onClick={()=>{router.push('/courses/futures')}} className="lg:w-[300px] lg:h-[300px] md:h-[250px] md:w-[250px] w-[200px] h-[200px] bg-[url('/Futures.jpg')] bg-cover bg-center cursor-pointer"></div>
-          <h1 className='font-[700] text-[20px]'>Learn Futures</h1>
-          <h2 className='font-[600]'>Xyz Academy</h2>
-          <div className="flex flex-row">
-            <BsStarFill style={{fill: '#f08800'}} />
-            <BsStarFill style={{fill: '#f08800'}} />
-            <BsStarFill style={{fill: '#f08800'}} />
-            <BsStarFill style={{fill: '#f08800'}} />
-            <BsStarFill style={{fill: '#f08800'}} />
-          </div>              
-          <p className='font-[700]'>NGN 60,000</p>
+          <div onClick={()=>{router.push('/courses/futures')}} className="lg:w-[300px] lg:h-[300px] md:h-[250px] md:w-[250px] w-[200px] h-[200px] bg-[url('/Futures.jpg')] bg-cover bg-center cursor-pointer"></div>
+            <h1 className='font-[700] text-[20px]'>Learn Futures</h1>
+            <h2 className='font-[600]'>Xyz Academy</h2>
+            <div className="flex flex-row">
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+            </div>              
+            <p className='font-[700]'>NGN 60,000</p>
+        </div>
+        <div className='course10 '>
+          <div onClick={()=>{router.push('/courses/xyztradingsignals')}} className="lg:w-[300px] lg:h-[300px] md:h-[250px] md:w-[250px] w-[200px] h-[200px] bg-[url('/tradingsignals.jpg')] bg-cover bg-center cursor-pointer"></div>
+            <h1 className='font-[700] text-[20px]'>Exclusive XYZ Trading Signals</h1>
+            <h2 className='font-[600]'>Xyz Academy</h2>
+            <div className="flex flex-row">
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+              <BsStarFill style={{fill: '#f08800'}} />
+            </div>              
+            <p className='font-[700]'>NGN 60,000 per Quarter</p>
         </div>
       </div>
     )

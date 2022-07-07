@@ -57,7 +57,7 @@ export default function signal() {
 
                 <p>You will be added to our premium WhatsApp group chat where you'd receive trade calls on weekly basis so that you know when to enter and exit the market.</p>
 
-                <p>This will last throughout the the quarter that is 3months.</p>
+                <p>This will last throughout the quarter that is 3months.</p>
 
                 <p>We'd also recommend daily profit limits for you so that you don't loose your money due to greed.</p>
 
@@ -72,20 +72,20 @@ export default function signal() {
                 <form onSubmit={handledata}>
                   <div className='flex flex-col'>
                     <div className='flex items-center'>
-                      <label className='mr-[4px]'>Forex</label>
+                      <label className='mr-[4px] font-[600] text-[20px]'>Forex</label>
                       <input type='checkbox' ref={forex} onClick={checkforex} value='forex' name='forex' />
                     </div>
                     <div className='flex items-center'>
-                      <label className='mr-[4px]'>Crypto</label>
+                      <label className='mr-[4px] font-[600] text-[20px]'>Crypto</label>
                       <input type='checkbox' ref={crypto} onClick={checkcrypto} value='crypto' name='crypto'  />
                     </div>
                     <div className='flex items-center'>
-                      <label className='mr-[4px]'>Synthetic Indices</label>
+                      <label className='mr-[4px] font-[600] text-[20px] '>Synthetic Indices</label>
                       <input type='checkbox' ref={synth} onClick={checksynth} value='synthetic' name='synthetic' className='' />
                     </div>
                   </div>
                   {error === true ? <p className='text-[red]'>Please select an Option</p> : null}
-                  <button type='submit'>Checkout</button>
+                  <button className='bg-[black] rounded-sm mt-[5px] p-[8px] text-white font-[600]' type='submit'>Checkout</button>
                 </form>
                 </div>
             </div>

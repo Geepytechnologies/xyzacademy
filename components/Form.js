@@ -49,8 +49,8 @@ export default class Form extends Component {
     return (
         // <div className="w-[70%]">
             <form onSubmit={this.onSubmit} className="flex items-center justify-center mt-[20px]">
-                <div className='flex flex-col w-[100%] items-center justify-center p-[20px] bg-[#e9e9ea] mb-[30px]'>
-                    <div className="flex flex-col w-[80%] md:w-[40%] m-[10px]">
+                <div className='flex flex-col w-[80%] items-center rounded-xl justify-center p-[20px] bg-[#e9e9ea] mb-[30px]'>
+                    <div className="flex flex-col w-[80%] md:w-[60%] m-[10px]">
                         <label>Name</label>
                         <input type="text" className="rounded-xl p-[3px]" value={this.state.name} onChange={this.onChangeName} required={true} />
                         <label>Email</label>

@@ -32,9 +32,10 @@ export default function Services() {
             <div className="w-[100%] h-[300px] rounded-lg bg-cover bg-[url('/whats7.jpeg')] "></div>
             <div className=' flex flex-col items-center justify-center'>
             <h1 className="text-center text-[#373737] mx-[5px] font-[600] text-[25px] sm:text-[40px]">Are you looking for a <span className='text-[#f08800] font-[700] text-[45px] font-danc'>reliable</span> vendor to buy your USDTs?</h1>
-            <h2 className="text-center md:pb-[40px] text-[20px]">Click <Link href='/vendor'><span className='text-[blue] cursor-pointer'>here</span></Link> to buy now</h2>
-            </div>
-         </div>  
+            <h2 className="text-center m-[5px] text-[20px]">Trade with us here at XYZ Academy</h2>
+            <button onClick={()=>{router.push('/vendor')}} className='bg-[rgba(12,25,82,0.9)] m-[3px] flex items-center justify-center md:mt-[60px] p-[5px] text-white rounded-lg'><span className='mr-[5px] font-[600]'>Buy Now</span><FaArrowAltCircleRight style={{fill:'white'}} /></button>
+            </div>  
+        </div>
     </div>
   )
 }
