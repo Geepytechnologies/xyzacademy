@@ -46,8 +46,8 @@ export default function Signal() {
     const Signal = ()=>{
         return(
             <div>
-                <div className=' p-[20px]'>
-                    <div className='relative h-[400px] w-[400px] '>
+                <div className=' p-[20px] flex items-center justify-center'>
+                    <div className='relative h-[250px] w-[250px] md:h-[400px] md:w-[400px] '>
                         <Image src='/tradingsignals.jpg' alt='' layout='fill' objectFit='cover' />
                     </div>
                 </div>
@@ -71,15 +71,15 @@ export default function Signal() {
 
                 <form onSubmit={handledata}>
                   <div className='flex flex-col'>
-                    <div className='flex items-center'>
+                    <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px]'>Forex</label>
                       <input type='checkbox' ref={forex} onClick={checkforex} value='forex' name='forex' />
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px]'>Crypto</label>
                       <input type='checkbox' ref={crypto} onClick={checkcrypto} value='crypto' name='crypto'  />
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px] '>Synthetic Indices</label>
                       <input type='checkbox' ref={synth} onClick={checksynth} value='synthetic' name='synthetic' className='' />
                     </div>

@@ -6,11 +6,11 @@ import Bottomnav from '../../components/bottomnav/Bottomnav'
 import Video from '../../components/aboutus/Video'
 import Header from '../../components/Header'
 import FAQ from '../../components/FAQ'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image'
-import { useRouter } from 'next/router'
 
 
 export default function About() {
@@ -18,12 +18,54 @@ export default function About() {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
-    // autoplaySpeed: 7000,
+    autoplaySpeed: 7000,
     // cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1
+  }
+  const Slide = ()=>{
+    return(
+      <div className='w-[100%] flex items-center justify-center mt-[30px] '>
+      <div className='items-center relative justify-center bg-[#0c1850cc] flex mb-[40px] w-[90%] sm:w-[70%]'>
+        <div className="absolute top-[0%] left-[0] h-[150px] w-[150px] bg-[url('/logowhite.png')] bg-cover opacity-[0.3] "></div>
+        <div className="absolute bottom-[0%] right-[0] h-[150px] w-[150px] bg-[url('/logowhite.png')] bg-cover opacity-[0.3] "></div>
+        <Slider {...settings} className="w-[90%] p-[10px] z-[1]" >
+          <div>
+            <div className='relative w-[100%] h-[400px] border-2 border-white '>
+              <Image src={'/whats1.jpeg'} layout='fill' objectFit='contain' />
+            </div>            
+          </div>
+          <div>
+           <div className='relative w-[100%] h-[400px] border-2 border-white'>
+            <Image src={'/whats2.jpeg'} layout='fill' objectFit='contain'  />
+           </div>
+          </div>
+          <div>
+            <div className='relative w-[100%] h-[400px] border-2 border-white'>
+              <Image src={'/whats3.jpeg'} layout='fill' objectFit='contain' />
+            </div>
+          </div>
+          <div>
+            <div className='relative w-[100%] h-[400px] border-2 border-white'>
+              <Image src={'/whats4.jpeg'} layout='fill' objectFit='contain'  />
+            </div>
+          </div>
+          <div>
+            <div className='relative w-[100%] h-[400px] border-2 border-white'>
+              <Image src={'/whats5.jpeg'} layout='fill' objectFit='contain' />
+            </div>
+          </div>
+          <div>
+            <div className='relative w-[100%] h-[400px] border-2 border-white'>
+              <Image src={'/whats6.jpeg'} layout='fill' objectFit='contain' />
+            </div>
+          </div>
+        </Slider>
+      </div>
+      </div>
+    )
   }
   const Vision =()=>{
     return(
@@ -56,7 +98,7 @@ export default function About() {
   const Aboutxyz = ()=>{
     return(
       <div className='p-[5px]'>
-        <p><span className='italic mr-[5px] text-[25px] font-[600] text-[#f08800]'>XYZ ACADEMY</span> is a brand that gives you the opportunity to master, Practice and earn from the Financial market. We also teach tech skills that will help you to make more money by solving problems in business and society at large.</p>
+        <p><span className='mr-[5px] text-[20px] font-[600] text-[#f08800]'>XYZ Academy</span> is a brand that gives you the opportunity to master, Practice and earn from the Financial market. We also teach tech skills that will help you to make more money by solving problems in business and society at large.</p>
         <div className='pl-[20px]'>
           <p className='font-[600] '><span onClick={()=>{router.push('/courses')}} className='cursor-pointer hover:text-[blue]'>Courses:</span></p>
           <ul className='list-disc'>
@@ -71,29 +113,6 @@ export default function About() {
       </div>
     )
   }
-  /* const Slide = ()=>{
-    return(
-      <div className='items-center justify-center flex  w-[100%]'>
-        <Slider {...settings} className="w-[70%] p-[10px]" >
-          <div>
-           <div className="bg-[url('/cryptoglobe.jpg')] bg-cover w-[100%] h-[200px] ">
-            
-           </div>
-          </div>
-          <div>
-           <div className='relative w-[100%] h-[400px]'>
-            <Image src={'/IMG1.jpg'} layout='fill' objectFit='contain' />
-           </div>
-          </div>
-          <div>
-            <div className='relative w-[100%] h-[400px]'>
-              <Image src={'/IMG3.jpg'} layout='fill' objectFit='contain' />
-            </div>
-          </div>
-        </Slider>
-      </div>
-    )
-  } */
   return (
     <div className={styles.container}>
       <Header />
@@ -102,9 +121,10 @@ export default function About() {
       <Aboutxyz />
       <Vision />
       <Mission />
+      <Slide />
       <FAQ />
       <Footer />
-      <div className='fixed bottom-[0px] w-[100%] sm:hidden'>
+      <div className='fixed bottom-[0px] z-[999] w-[100%] sm:hidden'>
         <Bottomnav />
       </div>
     </div>
