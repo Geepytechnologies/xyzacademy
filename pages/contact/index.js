@@ -11,6 +11,7 @@ import Link from 'next/link'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 
 export default function Contact() {
@@ -50,7 +51,7 @@ export default function Contact() {
  const Follow = ()=>{
   return(
     <div className='flex items-center justify-center mb-[60px]'>
-      <div data-aos="zoom-in" data-aos-duration="1000" className="bg-[#0c195299] w-[60%] p-[10px] ">
+      <div data-aos="zoom-in" data-aos-duration="1000" className="bg-[#0c195299] w-[80%] md:w-[60%] p-[10px] ">
         <p className='text-white text-center text-[25px]'>Follow us on Social Media</p>
         <div className='w-[100%] items-center justify-center flex'>
             <div className='w-[60%] p-[5px] flex items-center justify-around'>
@@ -78,13 +79,22 @@ export default function Contact() {
     </div>
   )
  }
+ const chat = ()=>{
+ /*  window.location.href = "https://wa.me/+2347039134538?text="+'I'+"%20"+'want'+"%20"+'to'+"%20"+'make an enquiry about Xyz Academy'; */
+  window.open("https://wa.me/+2347039134538?text= I want to make an enquiry about Xyz Academy","_blank");
+ }
   return (
-    <div className={styles.container}>
+    <div className='w-[100%] h-[100%] relative'>
       <Header />
       <Navbar active='contact' />
-      <Intro />
-      <Info />
-      <Follow />
+      <div className=''>
+        <Intro />
+        <Info />
+        <Follow />
+        <div className='p-[20px] fixed right-0 bottom-[90px]'>
+          <IoLogoWhatsapp onClick={chat} style={{fill:'#25d366'}} className='text-[70px] hover:scale-[1.1] cursor-pointer' />
+        </div>
+      </div>
       <Footer />
       <div className='fixed bottom-[0px] sm:hidden w-[100%]'>
         <Bottomnav />

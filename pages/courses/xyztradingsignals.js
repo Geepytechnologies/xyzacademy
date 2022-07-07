@@ -14,24 +14,31 @@ export default function Signal() {
    const [forexprice, setForexprice] = useState(0);
    const [cryptoprice, setCryptoprice] = useState(0);
    const [synthprice, setSynthprice] = useState(0);
+   const [course1,setCourse1] = useState('');
+   const [course2,setCourse2] = useState('');
+   const [course3,setCourse3] = useState('');
    const [error, setError] = useState(false);
    const forex = useRef();
    const crypto = useRef();
    const synth = useRef();
    const payment = useRef();
-   const checkforex = ()=>{
+   const checkforex = (e)=>{
     if(forex.current.checked == true){
       setForexprice(60000);
+      setCourse1(e.target.value);
+      console.log(course1);
     }
    }
-   const checkcrypto = ()=>{
+   const checkcrypto = (e)=>{
     if(crypto.current.checked == true){
       setCryptoprice(60000);
+      setCourse2(e.target.value);
     }
    }
-   const checksynth = ()=>{
+   const checksynth = (e)=>{
     if(synth.current.checked == true){
       setSynthprice(60000);
+      setCourse3(e.target.value);
     }
    }
    const handledata = (e)=>{
@@ -73,15 +80,15 @@ export default function Signal() {
                   <div className='flex flex-col'>
                     <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px]'>Forex</label>
-                      <input type='checkbox' ref={forex} onClick={checkforex} value='forex' name='forex' />
+                      <input type='checkbox' ref={forex} onClick={checkforex} value='Forex' name='forex' />
                     </div>
                     <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px]'>Crypto</label>
-                      <input type='checkbox' ref={crypto} onClick={checkcrypto} value='crypto' name='crypto'  />
+                      <input type='checkbox' ref={crypto} onClick={checkcrypto} value='Crypto' name='crypto'  />
                     </div>
                     <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px] '>Synthetic Indices</label>
-                      <input type='checkbox' ref={synth} onClick={checksynth} value='synthetic' name='synthetic' className='' />
+                      <input type='checkbox' ref={synth} onClick={checksynth} value='Synthetic Indices' name='synthetic' className='' />
                     </div>
                   </div>
                   {error === true ? <p className='text-[red]'>Please select an Option</p> : null}
@@ -95,7 +102,8 @@ export default function Signal() {
         const price = forexprice + cryptoprice +  synthprice;
         const form = useRef();
         const paystack = useRef();
-        const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
+        // const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
+        const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
         const amount = Number(price) * 100;
         const challengePrice = price;
         const item = 'Trading Signals';
@@ -131,11 +139,13 @@ export default function Signal() {
             name,
             phone,
             location,
+            courses: [`${course1}`]
           },
           publicKey,
           text: "Proceed to payment",
-          onSuccess: () =>
-            alert("You've Successfully purchased the Course"),
+          onSuccess: () =>{
+            alert("You've Successfully made a purchase");
+          },
           onClose: () => alert("Are you sure you want to cancel the Payment?"),
         }
       return(
@@ -144,6 +154,7 @@ export default function Signal() {
           <div className="bg-[url('/logo1.png')] bg-cover h-[200px] w-[200px] "></div>
           <div className="flex flex-col items-center justify-center">
             <p className="font-[600] text-[30px]">{item}</p>
+            <p className="font-[600] text-[30px]">{[`${course1 && course1},${course2 && course2},${course3 && course3}`]}</p>
             <p className="font-[600]">NGN {challengePrice.toLocaleString("en-us") }</p>
           </div>
         </div>
@@ -202,6 +213,7 @@ export default function Signal() {
           <div ref={paystack} className=" hidden mt-[30px]">
             <p className='font-[600]'>{name.toUpperCase()}</p>
             <p className='font-[600]'>{email.toUpperCase()}</p>
+            <p className='font-[600]'>{phone}</p>
             <p className='font-[600]'>{phone}</p>
             <div className='bg-[green] text-center text-white p-[10px] mt-[30px] rounded-lg'>
               <PaystackButton {...componentProps} />
