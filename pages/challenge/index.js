@@ -12,7 +12,7 @@ export default function Index() {
         return(
             <div>
                 <div className="w-[100%] h-[400px] mb-[25px] relative">
-                    <Image src={'/bg1.jpg'} width='100%' layout='fill' objectFit='cover' />
+                    <Image alt='' src={'/bg1.jpg'} width='100%' layout='fill' objectFit='cover' />
                 </div>
                 <p className='text-center font-mont font-[700] my-[10px] text-[20px]'>$10 to $100 one month challenge</p>
                 <p className='px-[5px]'>We are organizing a one month challenge that is aimed at moving every participant from $10 to $100.</p>

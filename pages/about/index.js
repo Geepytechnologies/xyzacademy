@@ -31,7 +31,7 @@ export default function About() {
         <p className='font-[600] text-[25px] text-[#f08800] '>Our Vision</p>
         <div className='w-[100%]'>
           <div className="h-[300px] w-[100%] border-[3px] rounded-xl border-[white]  relative">
-            <Image src='/vision.jpg' layout='fill' objectFit='cover' className='rounded-xl' />
+            <Image alt='' src='/vision.jpg' layout='fill' objectFit='cover' className='rounded-xl' />
           <div className="bg-[url('/logowhite.png')] bg-cover bg-center w-[150px] h-[150px] absolute top-0 left-0 "></div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function About() {
       </div>
     )
   }
-  const Slide = ()=>{
+  /* const Slide = ()=>{
     return(
       <div className='items-center justify-center flex  w-[100%]'>
         <Slider {...settings} className="w-[70%] p-[10px]" >
@@ -93,7 +93,7 @@ export default function About() {
         </Slider>
       </div>
     )
-  }
+  } */
   return (
     <div className={styles.container}>
       <Header />

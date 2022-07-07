@@ -58,7 +58,7 @@ export default function Navbar(props) {
        blog.current.classList.add('bg-[hsl(34,100%,47%)]')
        blog.current.classList.add('w-[90%]')
        }
-    },[])
+    })
   return (
     <div className='text-white w-[100%] border-b shadow-[0_7px_60px_-15px_rgba(0,0,0,0.3)] border-b-[#f7f7f7] h-[90px] flex items-center relative sticky top-[0px] bg-[white] z-[100]'>
         {/* logo section */}

@@ -17,7 +17,7 @@ export default function Popup(props) {
               <RiCloseCircleLine className='text-[30px] font-[600]' style={{fill: 'white'}} />
           </div>
           <div className="w-[100%] h-[300px] relative ">
-            <Image src={'/dollarchallenge.jpg'}  layout='fill' objectFit='cover' />
+            <Image src={'/dollarchallenge.jpg'} alt=''  layout='fill' objectFit='cover' />
           </div>
           <div className='bg-[#0c1952]'>
             <p className='text-white p-[3px]'>Join others as we move our portfolios from $10 to $100 in the month of July, 2022.</p> 

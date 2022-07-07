@@ -24,7 +24,6 @@ export default function Payment() {
   return (
     <div className="container">
     <div className="item">
-      <img />
       <div className="item-details">
         <p>Dancing Shoes</p>
         <p>{amount}</p>

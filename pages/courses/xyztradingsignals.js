@@ -10,7 +10,7 @@ import Header from '../../components/Header'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/Sidebar'
 
-export default function signal() {
+export default function Signal() {
    const [forexprice, setForexprice] = useState(0);
    const [cryptoprice, setCryptoprice] = useState(0);
    const [synthprice, setSynthprice] = useState(0);
@@ -48,7 +48,7 @@ export default function signal() {
             <div>
                 <div className=' p-[20px]'>
                     <div className='relative h-[400px] w-[400px] '>
-                        <Image src='/tradingsignals.jpg' layout='fill' objectFit='cover' />
+                        <Image src='/tradingsignals.jpg' alt='' layout='fill' objectFit='cover' />
                     </div>
                 </div>
                 <div className='px-[10px] pb-[10px]'>
