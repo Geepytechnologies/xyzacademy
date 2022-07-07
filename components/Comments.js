@@ -123,19 +123,19 @@ export default function Comments() {
                 </div>
             </div>
             <div>
-                <div className='h-[400px] w-[300px] pb-[20px]' >
+                <div className='h-[auto] w-[300px] pb-[20px]' >
                     <div className='flex flex-col h-[60%] items-center justify-center'>
                     <div className="img3 border-2 border-[#f08800] rounded-full w-[150px] h-[150px]"></div>
                     <p className='font-[600]'>{Comment[3].name}</p>
                     <p>{Comment[3].profile}</p>
                     </div>
-                    <div className='flex items-center justify-center h-[40%]'>
-                    <div className='basis-[10%] ml-[5px] h-[100%] flex flex-col justify-center items-center'>
-                        <div className='bg-[#f08800] rounded-full w-[10px] h-[10px] mb-[2px]'></div>
-                        <div className='border-l-4  border-[#f08800] h-[80%]'></div>
-                        <div className='bg-[#f08800] rounded-full w-[10px] h-[10px] mt-[2px] '></div>
-                    </div>
-                    <p className='basis-[90%] text-center'>{Comment[3].comment}</p>
+                    <div className='flex items-center mt-[10px] justify-center h-[auto]'>
+                        <div className='basis-[10%] ml-[5px] h-[auto] flex flex-col justify-center items-center'>
+                            <div className='bg-[#f08800] rounded-full w-[10px] h-[10px] mb-[2px]'></div>
+                            <div className='border-l-4  border-[#f08800] h-[120px]'></div>
+                            <div className='bg-[#f08800] rounded-full w-[10px] h-[10px] mt-[2px] '></div>
+                        </div>
+                        <p className='basis-[90%] text-center'>{Comment[3].comment}</p>
                     </div>
                 </div>
             </div>

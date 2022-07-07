@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(()=>{
     setTimeout(()=>{
       popup.current.style.display = 'block'
-    },60000)
+    },10000)
   },[])
   const hide = () =>{
     popup.current.style.display = 'none'
