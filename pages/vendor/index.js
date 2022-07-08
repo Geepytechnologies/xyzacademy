@@ -10,8 +10,8 @@ export default function index() {
   const Vendor = ()=>{
     return(
       <div>
-        <div className='relative w-[100%] h-[400px]'>
-          <Image src='/tradebtc.jpg' layout='fill' objectFit='cover' alt='' className='blur-[2px]' />
+        <div className='relative w-[100%] h-[250px] md:h-[350px]'>
+          <Image src='/tradebtc.jpg' layout='fill' objectFit='cover' alt='' className='blur-[1px]' />
           <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-[url('/logowhite.png')] bg-cover "></div>
         </div>
         <p className='font-[600] text-[25px] ml-[20px] '>Contact XYZ Vendors Now</p>

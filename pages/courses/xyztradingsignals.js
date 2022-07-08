@@ -9,6 +9,8 @@ import Footer from '../../components/footer/Footer'
 import Header from '../../components/Header'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/Sidebar'
+import {RiCloseCircleLine} from 'react-icons/ri'
+
 
 export default function Signal() {
    const [forexprice, setForexprice] = useState(0);
@@ -22,76 +24,107 @@ export default function Signal() {
    const crypto = useRef();
    const synth = useRef();
    const payment = useRef();
+
+
    const checkforex = (e)=>{
-    if(forex.current.checked == true){
-      setForexprice(60000);
-      setCourse1(e.target.value);
-      console.log(course1);
+    if(forex.current.checked !== true){
+      forex.current.checked == true;
+    }else if(forex.current.checked == true){
+      forex.current.checked == false;
     }
+    else{
+      return null;
+    }  
    }
+
    const checkcrypto = (e)=>{
-    if(crypto.current.checked == true){
-      setCryptoprice(60000);
-      setCourse2(e.target.value);
+    if(crypto.current.checked !== true){
+      crypto.current.checked == true;
+    }else if(crypto.current.checked == true){
+      crypto.current.checked == false;
+    }
+    else{
+       return null
     }
    }
+
    const checksynth = (e)=>{
-    if(synth.current.checked == true){
-      setSynthprice(60000);
-      setCourse3(e.target.value);
+    if(synth.current.checked !== true){
+      synth.current.checked == true;
+    }else if(synth.current.checked == true){
+      synth.current.checked == false;
     }
+    else{
+      return null;
+    }       
    }
+
+  const handleSynth = ()=>{
+    if(synth.current.checked == true){
+      setSynthprice(60000)
+      setCourse3('Synthetic Indices')
+    }
+  }
+  const handleForex = ()=>{
+    if(forex.current.checked == true){
+      setForexprice(60000)
+      setCourse1('Forex')
+    }
+  }
+  const handleCrypto = ()=>{
+    if(crypto.current.checked == true){
+      setCryptoprice(60000)
+      setCourse2('Crypto')
+    }
+  }
+
    const handledata = (e)=>{
      e.preventDefault();
-     if(forexprice == 0 && cryptoprice == 0 && synthprice == 0){
+     if(forex.current.checked == false && crypto.current.checked == false && synth.current.checked == false){
          setError(true);
      }
      else{
+      handleCrypto();
+      handleForex();
+      handleSynth();
       payment.current.style.display = 'block';
-     }
+    }
     }
     const Signal = ()=>{
         return(
             <div>
-                <div className=' p-[20px] flex items-center justify-center'>
-                    <div className='relative h-[250px] w-[250px] md:h-[400px] md:w-[400px] '>
-                        <Image src='/tradingsignals.jpg' alt='' layout='fill' objectFit='cover' />
-                    </div>
-                </div>
+              <div className=' p-[20px] flex items-center justify-center'>
+                  <div className='relative h-[250px] w-[250px] md:h-[400px] md:w-[400px] '>
+                      <Image src='/tradingsignals.jpg' alt='' layout='fill' objectFit='cover' />
+                  </div>
+              </div>
                 <div className='px-[10px] pb-[10px]'>
                 <p className='font-[600] text-[20px]'>XYZ Trading Signals</p>
                 <p>Allow us to do the analysis for you and give you trade calls that will keep you profitable in the market.</p>
-
                 <p>You will be added to our premium WhatsApp group chat where you'd receive trade calls on weekly basis so that you know when to enter and exit the market.</p>
-
                 <p>This will last throughout the quarter that is 3months.</p>
-
                 <p>We'd also recommend daily profit limits for you so that you don't loose your money due to greed.</p>
-
                 <p>We will be responsible for giving you trade calls but you'd be responsible for profit and your loss.</p>
-
                 <p>When you listen to us, you'd surely have so many successful trades and few non successful trades.</p>
-
                 <p>Choose one or all of the following:</p>
-
                 <p>Forex.  Crypto.   Synthetic Indices.</p>
 
                 <form onSubmit={handledata}>
                   <div className='flex flex-col'>
                     <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px]'>Forex</label>
-                      <input type='checkbox' ref={forex} onClick={checkforex} value='Forex' name='forex' />
+                      <input type='checkbox' ref={forex} onClick={checkforex}  name='forex' />
                     </div>
                     <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px]'>Crypto</label>
-                      <input type='checkbox' ref={crypto} onClick={checkcrypto} value='Crypto' name='crypto'  />
+                      <input type='checkbox' ref={crypto} onClick={checkcrypto}  name='crypto'  />
                     </div>
                     <div className='flex items-center mt-[8px]'>
                       <label className='mr-[4px] font-[600] text-[20px] '>Synthetic Indices</label>
-                      <input type='checkbox' ref={synth} onClick={checksynth} value='Synthetic Indices' name='synthetic' className='' />
+                      <input type='checkbox' ref={synth} onClick={checksynth}  name='synthetic' className='' />
                     </div>
                   </div>
-                  {error === true ? <p className='text-[red]'>Please select an Option</p> : null}
+                  {error && error == true ? <p className='text-[red]'>Please select an Option</p> : null}
                   <button className='bg-[black] rounded-sm mt-[5px] p-[8px] text-white font-[600]' type='submit'>Checkout</button>
                 </form>
                 </div>
@@ -99,62 +132,76 @@ export default function Signal() {
         )
     }
     const Payment = ()=>{
-        const price = forexprice + cryptoprice +  synthprice;
-        const form = useRef();
-        const paystack = useRef();
-        // const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
-        const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
-        const amount = Number(price) * 100;
-        const challengePrice = price;
-        const item = 'Trading Signals';
-        const [email, setEmail] = useState('');
-        const [name, setName] = useState('');
-        const [phone, setPhone] = useState('');
-        const [location, setLocation] = useState('');
-        const formik = useFormik({
-          initialValues: {
-            email1: "",
-            name1: "",
-            phone1: "",
-            location1:"",
-          },
-          validationSchema: yup.object({
-            name1: yup.string().required("Required"),
-            email1: yup.string().email("Invalid Email address").required("Required"),
-            phone1: yup.string().required("Required").min(11, "Phone number must be up to eleven chatacters"),
-          }),
-          onSubmit: (values) =>{
-            setEmail(values.email1);
-            setName(values.name1);
-            setPhone(values.phone1);
-            setLocation(values.location1);
-            form.current.style.display = 'none'
-            paystack.current.style.display = 'block'
-          },
-        });
-        const componentProps = {
-          email,
-          amount,
-          metadata: {
-            name,
-            phone,
-            location,
-            courses: [`${course1}`]
-          },
-          publicKey,
-          text: "Proceed to payment",
-          onSuccess: () =>{
-            alert("You've Successfully made a purchase");
-          },
-          onClose: () => alert("Are you sure you want to cancel the Payment?"),
-        }
+      const price = forexprice + cryptoprice +  synthprice;
+      const form = useRef();
+      const paystack = useRef();
+      const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
+      // const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
+      const amount = Number(price) * 100;
+      const challengePrice = price;
+      const item = 'XYZ Trading Signals';
+      const [email, setEmail] = useState('');
+      const [name, setName] = useState('');
+      const [phone, setPhone] = useState('');
+      const [location, setLocation] = useState('');
+      const formik = useFormik({
+        initialValues: {
+          email1: "",
+          name1: "",
+          phone1: "",
+          location1:"",
+        },
+        validationSchema: yup.object({
+          name1: yup.string().required("Required"),
+          email1: yup.string().email("Invalid Email address").required("Required"),
+          phone1: yup.string().required("Required").min(11, "Phone number must be up to eleven chatacters"),
+        }),
+        onSubmit: (values) =>{
+          setEmail(values.email1);
+          setName(values.name1);
+          setPhone(values.phone1);
+          setLocation(values.location1);
+          form.current.style.display = 'none'
+          paystack.current.style.display = 'block'
+        },
+      });
+      const componentProps = {
+        email,
+        amount,
+        metadata: {
+          name,
+          phone,
+          location,
+        },
+        publicKey,
+        text: "Proceed to payment",
+        onSuccess: () =>{
+          alert("You've Successfully made a purchase");
+          console.log([course1,course2,course3]);
+        },
+        onClose: () => alert("Are you sure you want to cancel the Payment?"),
+      }
+      const hideform = ()=>{
+        setForexprice(0);
+        setSynthprice(0);
+        setCryptoprice(0);
+        setCourse1('');
+        setCourse2('');
+        setCourse3('');
+        payment.current.style.display = 'none';
+      }
       return(
         <div  className="container flex-col md:flex-row w-[90%] h-[auto] pb-[30px] mb-[100px] md:w-[70%]">
         <div className="bg-[#f8f8f8] w-[100%] md:w-[40%]">
-          <div className="bg-[url('/logo1.png')] bg-cover h-[200px] w-[200px] "></div>
+          <div className='flex flex-row items-center justify-between'>
+            <div className="bg-[url('/logo1.png')] bg-cover h-[200px] w-[200px] "></div>
+            <RiCloseCircleLine onClick={hideform} style={{fill:'#f08800'}} className='text-[35px] mr-[10px] cursor-pointer' />
+          </div>
           <div className="flex flex-col items-center justify-center">
             <p className="font-[600] text-[30px]">{item}</p>
-            <p className="font-[600] text-[30px]">{[`${course1 && course1},${course2 && course2},${course3 && course3}`]}</p>
+            <p className="font-[600] text-[20px]">{course1 && course1 !== '' ? course1 : null}</p>
+            <p className="font-[600] text-[20px]">{course2 && course2 !== '' ? course2 : null}</p>
+            <p className="font-[600] text-[20px]">{course3 && course3 !== '' ? course3 : null}</p>
             <p className="font-[600]">NGN {challengePrice.toLocaleString("en-us") }</p>
           </div>
         </div>
@@ -213,7 +260,6 @@ export default function Signal() {
           <div ref={paystack} className=" hidden mt-[30px]">
             <p className='font-[600]'>{name.toUpperCase()}</p>
             <p className='font-[600]'>{email.toUpperCase()}</p>
-            <p className='font-[600]'>{phone}</p>
             <p className='font-[600]'>{phone}</p>
             <div className='bg-[green] text-center text-white p-[10px] mt-[30px] rounded-lg'>
               <PaystackButton {...componentProps} />

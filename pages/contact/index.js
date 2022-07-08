@@ -21,7 +21,7 @@ export default function Contact() {
   const Intro =()=>{
     return(
       <div>
-        <div className='w-[100%] h-[300px] md:h-[400px] relative '>
+        <div className='w-[100%] h-[250px] md:h-[350px] relative '>
           <Image src='/contact.jpg' alt='' layout='fill' objectFit='cover' />
           <div data-aos="zoom-in" data-aos-duration="1000" className='absolute top-0 left-0 '>
             <div className="bg-[url('/logowhite.png')] bg-cover w-[150px] h-[150px] "></div>
@@ -43,7 +43,7 @@ export default function Contact() {
         </div>
         <div className='flex flex-row p-[5px] '>
           <GrMail style={{fill:'#f08800'}} className='mr-[5px] text-[30px]' />
-          <p>Xyzacademy@gmail.com</p>
+          <p>Xyzacademy12@gmail.com</p>
         </div>
       </div>
     )
