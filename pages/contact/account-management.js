@@ -27,7 +27,7 @@ export default function AccountManagement() {
     const Account = ()=>{
         return(
             <div className='p-[3px]'>
-                <p className='font-[600]'>Are you so busy that you can't trade by yourself? </p>
+                <p className='font-[600] text-[25px] text-center'>Are you so busy that you can't trade by yourself? </p>
                 <p>You might not have the patience to trade. And that does not mean that you are lazy or greedy. But then, you need patience to be able to remain profitable in this space.</p>
                 <p>Allow us to manage your account and in six weeks you will get three times the amount you invested.</p>
                 <p className='font-[600]'>What about losses?</p>

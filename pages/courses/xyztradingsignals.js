@@ -10,6 +10,9 @@ import Header from '../../components/Header'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/Sidebar'
 import {RiCloseCircleLine} from 'react-icons/ri'
+import { AiFillMoneyCollect } from 'react-icons/ai'
+import { IoLogoBitcoin } from 'react-icons/io'
+import { MdStackedLineChart } from 'react-icons/md'
 
 
 export default function Signal() {
@@ -191,17 +194,23 @@ export default function Signal() {
         payment.current.style.display = 'none';
       }
       return(
-        <div  className="container flex-col md:flex-row w-[90%] h-[auto] pb-[30px] mb-[100px] md:w-[70%]">
-        <div className="bg-[#f8f8f8] w-[100%] md:w-[40%]">
+        <div  className="container flex-col md:flex-row w-[90%] h-[auto]  mb-[100px] md:w-[70%]">
+        <div className="bg-[#f8f8f8] w-[100%] md:w-[40%] pb-[30px]">
           <div className='flex flex-row items-center justify-between'>
             <div className="bg-[url('/logo1.png')] bg-cover h-[200px] w-[200px] "></div>
             <RiCloseCircleLine onClick={hideform} style={{fill:'#f08800'}} className='text-[35px] mr-[10px] cursor-pointer' />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <p className="font-[600] text-[30px]">{item}</p>
-            <p className="font-[600] text-[20px]">{course1 && course1 !== '' ? course1 : null}</p>
-            <p className="font-[600] text-[20px]">{course2 && course2 !== '' ? course2 : null}</p>
-            <p className="font-[600] text-[20px]">{course3 && course3 !== '' ? course3 : null}</p>
+            <p className="font-[600] text-[30px] font-danc text-center">{item}</p>
+            {course1 && <div className='flex flex-row items-center justify-center'>
+              <AiFillMoneyCollect style={{fill:'#f08800'}} className='mr-[5px]' /><p className="font-[600] text-[20px]">{course1 !== '' ? course1 : null}</p>
+            </div>}
+            {course2 && <div className='flex flex-row items-center justify-center'>
+              <IoLogoBitcoin style={{fill:'#f08800'}} className='mr-[5px]' /><p className="font-[600] text-[20px]">{course2 !== '' ? course2 : null}</p>
+            </div>}
+            {course3 && <div className='flex flex-row items-center justify-center'>
+              <MdStackedLineChart style={{fill:'#f08800'}} className='mr-[5px]' /><p className="font-[600] text-[20px]">{course3 !== '' ? course3 : null}</p>
+            </div>}
             <p className="font-[600]">NGN {challengePrice.toLocaleString("en-us") }</p>
           </div>
         </div>

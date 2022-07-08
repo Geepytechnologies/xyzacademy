@@ -62,7 +62,7 @@ export default function technicalanalysis() {
         </div>
         {/* sidebar */}
         <div className="w-[100%] flex items-center justify-start lg:w-[30%] md:w-[100%]">
-          <Sidebar />
+          <Sidebar course="Technical analysis" />
         </div>
       </div>
       <Footer />

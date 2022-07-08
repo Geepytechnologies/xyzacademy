@@ -11,7 +11,7 @@ export default function Index() {
   const router = useRouter();
   const Intro = ()=>{
     return(
-      <div className='relative bg-[#f8f9fb] bg-[url(/bg3.jpg)] bg-cover bg-center w-[100%] h-[300px] md:h-[400px] '>    
+      <div className='relative bg-[#f8f9fb] bg-[url(/bg3.jpg)] bg-cover bg-center w-[100%] h-[250px] md:h-[400px] '>    
        <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-[url('/logowhite.png')] bg-cover "></div>
       </div>
     )

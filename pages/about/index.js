@@ -72,7 +72,7 @@ export default function About() {
       <div className='p-[5px] mt-[10px]'>
         <p className='font-[600] text-[25px] text-[#f08800] '>Our Vision</p>
         <div className='w-[100%]'>
-          <div className="h-[300px] w-[100%] border-[3px] rounded-xl border-[white]  relative">
+          <div className="h-[250px] md:h-[300px] w-[100%] border-[3px] rounded-xl border-[white]  relative">
             <Image alt='' src='/vision.jpg' layout='fill' objectFit='cover' className='rounded-xl' />
           <div className="bg-[url('/logowhite.png')] bg-cover bg-center w-[150px] h-[150px] absolute top-0 left-0 "></div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import {useRouter} from 'next/router'
 import { BsStarFill, BsStarHalf } from 'react-icons/bs'
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   const router = useRouter();
   const myItems = [
     {
@@ -61,7 +61,7 @@ export default function Sidebar() {
     }
   ]
   function check(el){
-    return el.course != "DeFi"
+    return el.course != props.course;
   }
   return (
     <div className="border w-[100%] md:w-[60%] lg:w-[100%] ml-[5px] p-[10px] my-[20px]">
