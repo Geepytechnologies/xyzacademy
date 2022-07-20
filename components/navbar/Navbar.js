@@ -89,7 +89,7 @@ export default function Navbar(props) {
                         <div ref={about} className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/'><a>Blog</a></Link></li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/blog'><a>Blog</a></Link></li>
                         <div ref={blog} className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                 </ul>

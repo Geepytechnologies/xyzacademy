@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTelegramPlane, FaBars} from 'react-icons/fa'
-import {AiOutlineCopyright} from 'react-icons/ai'
+import {AiFillHeart, AiOutlineCopyright} from 'react-icons/ai'
 import Image from 'next/image';
 import logo6 from '../../images/logowhite.png';
 import Link from 'next/link';
@@ -39,8 +39,9 @@ export default function Footer() {
             </div>
         </div>
         <div className='font-[roboto] text-[14px] pb-[20px] flex flex-col items-center justify-center mt-[10px] text-white'>
-            <div className='flex flex-row items-center justify-center'><AiOutlineCopyright style={{paddingRight: '3px', fontSize: 20}}/>Copyright 2022  Xyzacademy</div>
+            <div className='flex flex-row items-center justify-center'><AiOutlineCopyright style={{paddingRight: '3px', fontSize: 20}}/>Copyright 2022 - Xyzacademy</div>
             <p>All rights reserved</p>
+            <p className='flex flex-row items-center justify-center'>Made with <span className='mx-[2px]'><AiFillHeart /></span> by Geepy</p>
         </div>
     </div>
   )
