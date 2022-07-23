@@ -10,7 +10,7 @@ export default function Index() {
         <div className='p-[20px]'>
             <article>
             <h1 className='font-[700] text-[20px]'>UNDERSTANDING BLOCKCHAIN TECHNOLOGY</h1>
-            <div className='w-[500px] h-[300px] relative'>
+            <div className='w-[300px] md:w-[500px] h-[300px] relative'>
             <Image src={'/article1.png'} layout='fill' objectFit='cover' objectPosition={'center'} />
             </div>
             <h2>In recent years, you have always heard of the term "blockchain technology" especially regarding cryptocurrencies like bitcoin and ethereum. 
@@ -22,7 +22,7 @@ export default function Index() {
             <h1 className='font-[700] text-[20px]'>BRIEF HISTORY OF BLOCKCHAIN</h1>
             <h2>The history of blockchain dates back to 2008, through one person or group known as Satoshi Nakamoto. Satoshi Nakamoto is known as the brains behind blockchain technology, when he first published a paper bitcoin in 2008 as "Bitcoin". He provided details of how the technology was well equipped to improve digital trust given the decentralization aspect that meant nobody would ever be in control of anything. However, since Satoshi Nakamoto left and handed over bitcoin development to core developers, the digital ledger has evolved resulting in new applications that makeup the blockchain history.</h2>
             <h1 className='font-[700] text-[20px]'>THE DIFFERENT TYPES OF BLOCKCHAIN </h1>
-            <div className='w-[500px] h-[300px] relative '>
+            <div className='w-[300px] md:w-[500px] h-[300px] relative '>
                 <Image src={'/article101.png'} layout='fill' objectFit='cover' objectPosition={'center'} />
             </div>
             <p>There are basically four different types of blockchain structures, they include;</p>

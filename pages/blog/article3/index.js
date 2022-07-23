@@ -9,55 +9,54 @@ export default function Index() {
     const Article = () => (
         <div className='p-[20px]'>
             <article>
-            <h1 className='font-[700] text-[20px]'>UNDERSTANDING BLOCKCHAIN TECHNOLOGY</h1>
-            <div className='w-[500px] h-[300px] relative'>
+            <h1 className='font-[700] text-[20px]'>THE UNIQUE DISPARITY BETWEEN TOKENS AND COINS.</h1>
+            {/* <div className='w-[500px] h-[300px] relative'>
             <Image src={'/article1.png'} layout='fill' objectFit='cover' objectPosition={'center'} />
-            </div>
-            <h2>In recent years, you have always heard of the term "blockchain technology" especially regarding cryptocurrencies like bitcoin and ethereum. 
-            Blockchain is one of the most important invention in recent years, it is a structure that stores transactional records also known as the "block", of the public in several databases, known as the "chain" in a network connected through peer to peer nodes. This storage is known as a "Digital Ledger"
+            </div> */}
+            <h2>At some point in everyone's crypto journey, some of us may have confused a coin with a token. Actually tokens and coins are quite similar on a basic level, they both can be used to process payments. But the main difference boils down to usage. There are some market places that do not accept tokens but coins, and also there are things you can do with tokens but not with coins.
             </h2>
-            <h1 className='font-[700] text-[20px]'>WHAT IS BLOCKCHAIN?</h1>
-            <h2>Whenever a transaction is performed, it goes to the network and computer algorithm determines the authenticity of the transaction, once it's verified, this new transaction is linked with the previous transactions forming a chain of transactions. This chain is called the <span className='font-[600] text-[18px]'>"BLOCKCHAIN"</span>
+            <h1 className='font-[700] text-[20px]'>WHAT IS A COIN?</h1>
+            <h2>A coin is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority such as the government or bank to maintain it. Coins do not exist in a physical form (like paper money) and are typically not issued by a central authority. The first decentralized cryptocurrency was bitcoin, which was first released as open source software in 2009. As of march 2022 there were more than 9000 other crypto currencies in the market place.
             </h2>
-            <h1 className='font-[700] text-[20px]'>BRIEF HISTORY OF BLOCKCHAIN</h1>
-            <h2>The history of blockchain dates back to 2008, through one person or group known as Satoshi Nakamoto. Satoshi Nakamoto is known as the brains behind blockchain technology, when he first published a paper bitcoin in 2008 as "Bitcoin". He provided details of how the technology was well equipped to improve digital trust given the decentralization aspect that meant nobody would ever be in control of anything. However, since Satoshi Nakamoto left and handed over bitcoin development to core developers, the digital ledger has evolved resulting in new applications that makeup the blockchain history.</h2>
-            <h1 className='font-[700] text-[20px]'>THE DIFFERENT TYPES OF BLOCKCHAIN </h1>
-            <div className='w-[500px] h-[300px] relative '>
-                <Image src={'/article101.png'} layout='fill' objectFit='cover' objectPosition={'center'} />
-            </div>
-            <p>There are basically four different types of blockchain structures, they include;</p>
+            <h1 className='font-[700] text-[20px]'>CHARACTERISTICS OF COIN.</h1>
               <ul>
-                <li><span className='font-[600] text-[18px]'>Public Blockchains: </span>They are permissionless in nature, allow anyone to join, and are completely decentralized. Bitcoin and Ethereum are typical examples of public blockchain. </li>
-                <li><span className='font-[600] text-[18px]'>Private Blockchain: </span>A private blockchain is managed by a network administrator and participants needs consent to join the network.</li>
-                <li><span className='font-[600] text-[18px]'>Consortium Blockchain: </span>It is a type of semi-decentralised network in which members are not granted to a single entity, instead it's granted to a group of individuals or nodes.</li>
-                <li><span className='font-[600] text-[18px]'>Hybrid Blockchain: </span>A hybrid blockchain is a special type of blockchain technology that merges the components of both public and private blockchains.</li>
+                <li><span className='font-[600] text-[18px]'>A coin operates on its blockchain: </span>A blockchain keeps track of all transactions that involves its native crypto coin. This means that when you make a transaction and pay someone with ethereum, the receipt goes to the ethereum blockchain. If the same person later pays you back on bitcoin the receipt also goes to the bitcoin blockchain. Every transaction is protected by encryption and is accessible by any member of the network. </li>
+                <li><span className='font-[600] text-[18px]'>Coins are trustless: </span>Bitcoin and Ethereum is trustless because it was built in a way that you don't have to trust anybody else in order for the network to function. Everyone on the network has a copy of the ledger, so there's no need to trust any organization or third party because there's no point trusting them when you can just verify against the ledger because you have a copy of it.</li>
+                <li><span className='font-[600] text-[18px]'>Coins are immutable: </span>
+                  <ol className='list-decimal'>
+                    <li>It should be impossible for anyone but the owner of the private key to move funds.</li>
+                    <li>It should be highly impossible or difficult to rewrite history.</li>
+                    <li>All transactions are recorded on the blockchain.</li>
+                  </ol>
+                </li>
+                <li><span className='font-[600] text-[18px]'>Cryptocurrency coins are decentralized: </span>“Blockchains are politically decentralized (no one controls them) and are architecturally decentralized (No infrastructural central point of failure) but they are logically centralized (there is one commonly agreed state and the system behaves like a simple computer)” - Vitalik Buterin.
+                <p>Decentralized systems do not fail easily or accidentally because they rely on different network components. Decentralized systems are more expensive to hack or manipulate because they do not have vulnerable central points</p>
+                <p><span className='font-[600] text-[18px]'>TOKENS:</span> Tokens are units of value that a blockchain based organization or projects develop on top of existing blockchain networks. There are a lot of widely used token standards for creating crypto tokens, the majority of which have been built on top of ethereum.  Tokens are assets with value, they can be transferred, traded, bought, and sold, and they are stored in blockchain wallets.</p>
+                </li>
               </ul>
-            <h1 className='font-[700] text-[20px]'>HOW BLOCKCHAIN TECHNOLOGY WORKS.</h1>
-            <p>As earlier discussed, we all know that blockchain is a collection of blocks that store data.The running order of the blockchain is based on three components:</p>
+                <p>Additionally, tokens can serve many other purposes. Listed below are few uses of crypto tokens;</p>
+                <ul className='list-disc'>
+                  <li>
+                    <p><span className='font-[600] text-[18px]'>Governance token: </span>It is a token that gives the owner voting right in a cryptocurrency project. The more tokens you hold the more voting power you have. </p>
+                  </li>
+                  <li>
+                    <p><span className='font-[600] text-[18px]'>Non-fungible tokens (NFT): </span>It is a crypto token that shows ownership of digital asset. The ownership information is stored in the cryptocurrency token.</p>
+                  </li>
+                  <li>
+                    <p><span className='font-[600] text-[18px]'>DEFI: </span>This means decentralized finance, it refers to alternative financial system built on blockchain technology. For example, you could put up crypto tokens as collateral instead of getting a loan from a lender, then you get one from a defi platform.</p>
+                  </li>
+                </ul>
+            <h1 className='font-[700] text-[20px]'>DISPARITY BETWEEN COINS AND TOKENS </h1>
+            <p>Having known the different definitions of coin and token, I guess you should be able to decipher between both. However I would love to make it a little bit more precise here:</p>
             <ul className='list-disc'>
-                <li><span className='font-[600] text-[18px]'>Data: </span>Data stored in blocks differs based on the blockchain, if the data is about bitcoin, the blockchain maintains information about a transaction such as sender, receiver, and transaction amount</li>
-                <li><span className='font-[600] text-[18px]'>Hash: </span>A hash is similar to a fingerprint, it is also included in block. When a block is created its hash is computed. If something changes within the block, the hash will change as well</li>
-                <li><span className='font-[600] text-[18px]'>Previous data hash: </span>The hash of the previous block aids in the creation of a chain, and as a result of these aspects, the blockchain is extremely secure to trust and use.</li>
-            </ul>
-            <h1 className='font-[700] text-[20px]'>ADVANTAGES OF BLOCKCHAIN</h1>
-            <ul className='list-disc'>
-                <li>It allows dissemination of data base, which allows it to be shared without a central body or entity</li>
-                <li>It provides complete, consistent and up to date data with accuracy </li>
-                <li>People get to trust more in the blockchain technology due to its security</li>
-            </ul>
-            <h1 className='font-[700] text-[20px]'>DISADVANTAGES OF BLOCKCHAIN</h1>
-            <ul className='list-disc'>
-                <li>Blockchains are expensive and resource intensive </li>
-                <li>Blockchain is full of complex concepts and processes which may be difficult for a layman to understand </li>
-                <li>A transaction in the blockchain is only settled when all the nodes in the blockchain successfully verifies the transaction, which makes the process really slow.</li>
-            </ul>
-            <h1 className='font-[700] text-[20px]'>THE IMPACT OF BLOCKCHAIN TECHNOLOGY </h1>
-            <p>In banking and the payment system blockchain will allow anyone to exchange money faster, more efficiently and securely. </p>
-            <p>In cybersecurity: all data is verified and encrypted in blockchain using advanced cryptography, making it difficult for unauthorized access and use.</p>
-            <p>Blockchain can enable more reliable, faster and safer, automated communications. While blockchain is still new, the possibilities for innovations are endless.
-            </p>
-            <h1 className='font-[700] text-[20px]'>CONCLUSION</h1>
-            <p>Blockchain has successfully been able to bring transparency among users, it encourages entrepreneurship. This technology has opened the door to new possibilities and has provided a good ground for economic empowerment.</p>
+                <li>A coin is native to a blockchain and is used to trade currency and store value, while a token is a bit similar but relies on another coins blockchain. </li>
+                <li>A Coin represents a particular medium of exchange, while tokens represents an asset. </li>
+                <li>A token moves from one place to another when it's spent, while a coin is not moved from one place to another all transactions are recorded on blockchains</li>
+                <li>Tokens rely on smart contracts for trades, while coins transactions are handled by blockchain.</li>
+                <li>A token shows what a person owns, while a coin represents what a person is capable of owning.</li>
+            </ul>            
+            <h1 className='font-[700] text-[20px]'>IN CONCLUSION</h1>
+            <p>The disparity between coins and tokens is not so much. But if left not studied or understood the confusion can cause a very huge problem. The main difference is in utility and also you have to pay attention to what you are buying.</p>
             </article>
       </div>
     )

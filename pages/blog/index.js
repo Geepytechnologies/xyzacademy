@@ -88,7 +88,7 @@ export default function Index() {
     return (
       <>
       <div className='flex flex-col items-center justify-center mb-[40px]'>
-        <p className='font-[700] p-[10px] text-[20px] ml-[40px]'>XYZ Academy Blog</p>
+        <p className='font-[700] p-[10px] text-[20px]'>XYZ Academy Blog</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
           {data.map((item, index) => (
             <div onClick={()=> router.push(item.url)} key={index} className='cursor-pointer'>

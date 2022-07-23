@@ -34,9 +34,9 @@ export default function Index() {
             <h1 className='font-[700] text-[20px]'>Kinds of Trading Signals</h1>
             <p>Already, you have noticed a new term - Copy Trading. Trading signals can be executed either manually or automatically. Both manual execution and copy trading have their benefits and disadvantages. In manual execution, you carry out your trade using the signal that is sent to you. On the other hand, copy trading involves automatic implementation of the signal in your trading account with no input on your part.</p>
             <p>Manual execution is usually preferred among traders because:</p>
-            <ol>
+            <ol className='list-decimal'>
                 <li>Here, you have full control over your account. You decide whether to implement the signals you get or not.</li>
-                <li>2.	Additionally, you can gain real trading experience. With manual execution, you get to see your trades work in real-time and understand the signals better</li>
+                <li>Additionally, you can gain real trading experience. With manual execution, you get to see your trades work in real-time and understand the signals better</li>
             </ol>
             <p>Unfortunately, your personality and psychology can also affect your trades since they are not automated. To this effect, you must not allow your emotions to influence your trading execution. Execute your signals and trades in a timely, prompt manner. With these precautions in place, constant profitable trading will be achievable.</p>
             <h1 className='font-[700] text-[20px]'>How to Recognize Good Signals</h1>
