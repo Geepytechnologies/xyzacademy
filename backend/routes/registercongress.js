@@ -1,14 +1,13 @@
 const router = require('express').Router();
-const User = require('../models/user');
 const Congress = require('../models/congress');
-const cryptoJS = require('crypto-js');
 
-//REGISTER 
-router.post('/register', async (req,res)=>{
-    const newuser = new User({
-        username: req.body.username,
+// register XYZ financial congress
+router.post('/', async (req,res)=>{
+    const newuser = new Congress({
+        name: req.body.name,
         email: req.body.email,
-        password: cryptoJS.AES.encrypt(req.body.password, process.env.PASS_SEC).toString()
+        location: req.body.location,
+        phone: req.body.phone
     });
     try{
         const savedUser = await newuser.save();
@@ -17,6 +16,5 @@ router.post('/register', async (req,res)=>{
         res.status(500).json(err);
     }
 })
-
 
 module.exports = router;
