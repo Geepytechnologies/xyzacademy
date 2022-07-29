@@ -4,10 +4,12 @@
   "private": true,
   "proxy": "http://127.0.0.1:5000",
   "scripts": {
-    "dev": "next dev",
+    "main": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "cd backend && nodemon server.js",
+    "dev": "concurrently -n 'server,client' \"npm run server\" \"next dev\""
   },
   "dependencies": {
     "@emotion/cache": "^11.9.3",
