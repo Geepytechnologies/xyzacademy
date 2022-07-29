@@ -10,7 +10,7 @@ export default function Events() {
             <BiCalendar style={{fill:'#f08800', marginRight: 8}} />
             <span>Events</span>
         </div>
-        <div className='flex flex-col lg:flex-row items-center justify-around w-[100%] py-[20px] bg-[grey]'>
+        <div className='flex flex-col lg:flex-row items-center justify-around w-[100%] py-[20px]'>
             <Realdeal />
             <Challenge />
         </div>

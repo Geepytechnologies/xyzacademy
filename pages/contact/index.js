@@ -43,7 +43,7 @@ export default function Contact() {
         </div>
         <div className='flex flex-row p-[5px] '>
           <GrMail style={{fill:'#f08800'}} className='mr-[5px] text-[30px]' />
-          <p>Xyzacademy12@gmail.com</p>
+          <p>admin@xyzacademy.com.ng</p>
         </div>
       </div>
     )

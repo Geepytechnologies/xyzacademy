@@ -38,7 +38,6 @@ export default function Home() {
       <Services />
       <Courses />
       <Comments />
-      <Payment />
       <Footer />
       <div className='fixed h-[70px] bottom-[0px] sm:hidden w-[100%]'>
         <Bottomnav />
