@@ -68,7 +68,7 @@ export default function Index() {
     text: "Proceed to payment",
     onSuccess: async() =>{
       try {
-        await axios.post('http://localhost:5000/api/registercongress',{name,email,phone,location})
+        await axios.post('api/register',{name,email,phone,location})
       } catch (error) {
         console.log(error)
       }
