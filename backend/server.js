@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URL).then(()=>console.log("db connection succ
     console.log(err)
 });
 
-app.use(cors());
+app.use(cors({ origin : [ "http://localhost:5000"]}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 app.use('/api/auth', authRoute)
@@ -56,6 +56,6 @@ app.post('/send', async (req,res)=>{
 
 // main().catch(console.error);
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('Server is running on port 5000');
 });
