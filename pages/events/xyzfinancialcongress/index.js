@@ -68,7 +68,7 @@ export default function Index() {
     text: "Proceed to payment",
     onSuccess: async() =>{
       try {
-        await fetch('http://localhost:5000/api',{
+        await fetch('https://xyzacademy.herokuapp.com/api',{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
