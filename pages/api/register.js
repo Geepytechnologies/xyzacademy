@@ -1,3 +1,6 @@
+import axios from 'axios';
+
+
 export default async function handler(req, res) {
     try{
        const data = await axios.post('https://localhost:5000/api/registercongress' , {param: req.body.param}, headers)
