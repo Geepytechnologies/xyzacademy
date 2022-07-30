@@ -20,7 +20,7 @@ export default function Popup(props) {
             <Image src={'/flyer-01.jpg'} alt=''  layout='fill' objectFit='cover' style={{objectPosition:"center"}} />
           </div>
           <div className='bg-[#0c1952] rounded-b-xl'>
-            <button onClick={()=>{router.push('/challenge')}} className='bg-[hsl(34,100%,47%)] text-white p-[10px] rounded-lg m-[3px] font-danc'>Register Now</button>
+            <button onClick={()=>{router.push('/events/xyzfinancialcongress')}} className='bg-[hsl(34,100%,47%)] text-white p-[10px] rounded-lg m-[3px] font-danc'>Register Now</button>
           </div>
         </div>
     </div>

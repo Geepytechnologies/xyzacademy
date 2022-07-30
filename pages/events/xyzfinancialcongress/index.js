@@ -68,7 +68,7 @@ export default function Index() {
     text: "Proceed to payment",
     onSuccess: async() =>{
       try {
-        await axios.post('api/register',{name,email,phone,location})
+        await axios.post('https://localhost:5000/api',{name,email,phone,location})
       } catch (error) {
         console.log(error)
       }
@@ -97,7 +97,7 @@ export default function Index() {
           </div>
           <div onClick={showdetails} className='bg-[green] cardshadow rounded-xl cursor-pointer'><p className='text-white text-[18px] font-danc font-[700] p-[8px]'>Purchase Now</p></div>
           {/* details */}
-          <div ref={details} data-aos='fade-in' className='bg-[#f8f8f8] p-[20px] mt-[20px] eventshadow hidden'>
+          <div ref={details} data-aos='fade-in' className='bg-[#f8f8f8] mx-[20px] p-[20px] mt-[20px] eventshadow hidden'>
             <p className='font-mont '>Thanks For Your interest</p>
             <p className='font-mont '>You can choose to buy one or Both of the Outfits</p>
             <p className='font-mont '>The Hoodie costs <span className='font-mont font-[600]'>NGN 6,000 </span> and the Polo costs <span className='font-mont font-[600]'>NGN 3,000 </span></p>

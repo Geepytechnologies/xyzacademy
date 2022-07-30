@@ -3,6 +3,7 @@ const Congress = require('../models/congress');
 
 // register XYZ financial congress
 router.post('/', async (req,res)=>{
+    // res.header("Access-Control-Allow-Origin", "*");
     const newuser = new Congress({
         name: req.body.name,
         email: req.body.email,

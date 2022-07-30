@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URL).then(()=>console.log("db connection succ
     console.log(err)
 });
 
-app.use(cors({ origin : [ "http://localhost:5000"]}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 app.use('/api/auth', authRoute)
@@ -23,7 +23,23 @@ app.post('/send', async (req,res)=>{
     const {name,email} = req.body;
     res.json({name,email});
 })
+const Congress = require('./models/congress');
 
+app.post('/api', async (req,res)=>{
+    // res.header("Access-Control-Allow-Origin", "*");
+    const newuser = new Congress({
+        name: req.body.name,
+        email: req.body.email,
+        location: req.body.location,
+        phone: req.body.phone
+    });
+    try{
+        const savedUser = await newuser.save();
+        res.status(201).json(savedUser);
+    }catch(err){
+        res.status(500).json(err);
+    }
+})
 // async function main(){
     // let testAccount = await nodemailer.createTestAccount();
    /*  let transporter = nodemailer.createTransport({
