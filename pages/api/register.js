@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default async function handler(req, res) {
     try{
-       const data = await axios.post('https://localhost:5000/api/registercongress' , {param: req.body.param});
+       const data = await axios.post('https://xyzacademy.herokuapp.com/api' , {param: req.body.param});
         res.status(200).json(data)
      } catch (error) {
         console.error(error)
