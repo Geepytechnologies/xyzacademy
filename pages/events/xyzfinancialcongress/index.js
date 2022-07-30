@@ -25,8 +25,8 @@ export default function Index() {
   const form = useRef();
   const formdiv = useRef();
   const paystack = useRef();
-  const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
-  // const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
+  // const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
+  const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
   const amount = Number(price) * 100;
   const coursePrice = price;
   const item = course;
