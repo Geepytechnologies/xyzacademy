@@ -68,7 +68,7 @@ export default function Index() {
     text: "Proceed to payment",
     onSuccess: async() =>{
       try {
-        await axios.post('https://localhost:5000/api',{name,email,phone,location})
+        await axios.post('https://xyzacademy.herokuapp.com/api',{name,email,phone,location})
       } catch (error) {
         console.log(error)
       }
