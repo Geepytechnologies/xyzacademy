@@ -68,7 +68,7 @@ export default function Index() {
     text: "Proceed to payment",
     onSuccess: async() =>{
       try {
-        await fetch('https://localhost:5000/api',{
+        await fetch('http://localhost:5000/api',{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
