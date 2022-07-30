@@ -68,8 +68,20 @@ export default function Index() {
     text: "Proceed to payment",
     onSuccess: async() =>{
       try {
-        await axios.post('/api/register',{name,email,phone,location})
-      } catch (error) {
+        await fetch('https://localhost:5000/api',{
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email,
+            name,
+            phone,
+            location
+          })
+        })
+      }      
+      catch (error) {
         console.log(error)
       }
       alert("You've booked a spot for the XYZ Financial Congress!!!")
