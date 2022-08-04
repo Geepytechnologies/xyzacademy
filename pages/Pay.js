@@ -164,9 +164,9 @@ export default function Pay() {
             <p>{name}</p>
             <p>{email}</p>
             <p>{phone}</p>
-            <div className='bg-[green] text-center text-white p-[10px] mt-[20px] rounded-lg'>
+           {/*  <div className='bg-[green] text-center text-white p-[10px] mt-[20px] rounded-lg'>
               <PaystackButton {...componentProps} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

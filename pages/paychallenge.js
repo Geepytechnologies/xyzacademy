@@ -189,9 +189,9 @@ export default function Paychallenge() {
             <p className='font-[600]'>{name.toUpperCase()}</p>
             <p className='font-[600]'>{email.toUpperCase()}</p>
             <p className='font-[600]'>{phone}</p>
-            <div className='bg-[green] text-center text-white p-[10px] mt-[30px] rounded-lg'>
+            {/* <div className='bg-[green] text-center text-white p-[10px] mt-[30px] rounded-lg'>
               <PaystackButton {...componentProps} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
