@@ -25,8 +25,8 @@ export default function Index() {
   const form = useRef();
   const formdiv = useRef();
   const paystack = useRef();
-  // const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
-  const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
+  const publicKey = "pk_test_9f80648df27aa9d39816dc02d0bb64f83ace3241"
+  // const publicKey = "pk_live_e86d006caf0b6e1b565b6da482b995a15606a35e"
   const amount = Number(price) * 100;
   const coursePrice = price;
   const item = course;
@@ -155,9 +155,9 @@ export default function Index() {
                 <p className='text-[16px] font-[600] font-mont'>What is the aim of the financial congress?</p>
                 <p className='font-rob'>- We want to raise men who will have genuinely uncommon results in finances.</p>
               </div>
-              <div onClick={showform} className='w-[60%] m-[8px] md:w-[30%] border-2 border-[hsl(34,100%,47%)] cursor-pointer '>
+              {/* <div onClick={showform} className='w-[60%] m-[8px] md:w-[30%] border-2 border-[hsl(34,100%,47%)] cursor-pointer '>
                 <p className='text-[hsl(34,100%,47%)] text-center p-[5px] font-mont text-[20px] font-[600]'>Register Here</p>
-              </div>
+              </div> */}
               {/* my form */}
               <div ref={formdiv} className="w-[100%] md:w-[60%] my-[10px] flex items-center justify-center flex-col " style={{display: registerForm}}>
                 <div className=" bg-cover relative  w-[90%] h-[250px]"><div className="bg-[url('/XFCLogo-04.jpg')] bg-cover bg-center opacity-[100%] top-0 absolute w-[100%] h-[250px] "></div></div>
