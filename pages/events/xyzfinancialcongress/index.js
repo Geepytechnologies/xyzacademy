@@ -89,7 +89,8 @@ export default function Index() {
     onClose: () => alert("Are you sure you want to cancel the Payment for your registration?"),
   }
   const showform = () => {
-    setRegisterForm(()=>{'block'});
+    formdiv.current.style.display = 'block'
+    // setRegisterForm(()=>{'block'});
   }
     const Outfit = () => {
       const details = useRef();
@@ -158,8 +159,17 @@ export default function Index() {
               <div onClick={showform} className='w-[60%] m-[8px] md:w-[30%] border-2 border-[hsl(34,100%,47%)] cursor-pointer '>
                 <p className='text-[hsl(34,100%,47%)] text-center p-[5px] font-mont text-[20px] font-[600]'>Register Here</p>
               </div>
+              <div ref={formdiv} data-aos='fade-in' className='bg-[#f8f8f8] mx-[20px] p-[20px] mt-[20px] eventshadow hidden'>
+                <p className='font-mont '>Thanks For Your interest</p>
+                <p className='font-mont '>All you have to do is make a payment to the Account below and you book a spot for the financial congress</p>
+                <p className='font-mont '><span className='font-mont font-[600]'>Bank: </span>Polaris Bank</p>
+                <p className='font-mont '><span className='font-mont font-[600]'>Account No: </span>4091580363</p>
+                <p className='font-mont '><span className='font-mont font-[600]'>Bank: </span>Acad Xyz services</p>
+                <p className='font-mont '><span className='font-mont font-[600]'>Phone: </span>+234 805 327 5361</p>
+                <p className='font-mont '>Please send a message to +234 805 327 5361 after payment has been made for further proceedings.</p>
+              </div>
               {/* my form */}
-              <div ref={formdiv} className="w-[100%] md:w-[60%] my-[10px] flex items-center justify-center flex-col " style={{display: registerForm}}>
+              {/* <div ref={formdiv} className="w-[100%] md:w-[60%] my-[10px] flex items-center justify-center flex-col " style={{display: registerForm}}>
                 <div className=" bg-cover relative  w-[90%] h-[250px]"><div className="bg-[url('/XFCLogo-04.jpg')] bg-cover bg-center opacity-[100%] top-0 absolute w-[100%] h-[250px] "></div></div>
                 <div ref={form} className="w-[90%] h-[400px] py-[10px] bg-[#f8f8f8] flex items-center justify-center">
                 <form  onSubmit={formik.handleSubmit} className="w-[90%]">
@@ -226,7 +236,7 @@ export default function Index() {
                     <PaystackButton {...componentProps} />
                   </div>
                 </div>
-              </div>
+              </div> */}
         </div>
         <Footer />
         <div className='fixed h-[70px] bottom-[0px] sm:hidden w-[100%]'>
