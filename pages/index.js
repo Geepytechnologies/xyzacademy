@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <Goals />
       <Events />
-      // <Services />
+       {/* Services */} 
       <Courses />
       <Comments />
       <Footer />
