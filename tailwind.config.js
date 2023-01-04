@@ -23,6 +23,7 @@ module.exports = {
       'rob': ["Roboto", "sans-serif"],
       'danc': ["Dancing Script", "cursive"],
       'popp': ["Poppins", "sans-serif"],
+      'open': ["Open Sans", "sans-serif"],
     }
   },
   plugins: [],

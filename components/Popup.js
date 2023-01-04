@@ -17,7 +17,7 @@ export default function Popup(props) {
               <RiCloseCircleLine className='text-[30px] font-[600]' style={{fill: 'white'}} />
           </div>
           <div className="w-[100%] h-[300px] sm:h-[380px] relative">
-            <Image src={'/flyer-01.jpg'} alt=''  layout='fill' objectFit='cover' style={{objectPosition:"center"}} />
+            <Image src={'/flyer-01.jpg'} alt=''  fill={true} style={{objectPosition:"center", objectFit: 'cover'}} />
           </div>
           <div className='bg-[#0c1952] rounded-b-xl'>
             <button onClick={()=>{router.push('/events/xyzfinancialcongress')}} className='bg-[hsl(34,100%,47%)] text-white p-[10px] rounded-lg m-[3px] font-danc'>Register Now</button>

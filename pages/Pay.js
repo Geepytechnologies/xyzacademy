@@ -79,7 +79,7 @@ export default function Pay() {
      validationSchema: yup.object({
        name1: yup.string().required("Required"),
        email1: yup.string().email("Invalid Email address").required("Required"),
-       phone1: yup.string().required("Required").min(11, "Phone number must be up to eleven chatacters")
+       phone1: yup.string().required("Required").min(11, "Phone number must be up to eleven characters")
     }),
     onSubmit: (values) =>{
       setEmail(values.email1);

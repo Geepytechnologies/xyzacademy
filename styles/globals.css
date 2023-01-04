@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
 html,
 body {
   padding: 0;
@@ -46,6 +48,9 @@ table,th,td{
 /* background: linear-gradient(180deg, rgba(12,25,82,1) 11%, rgba(138,142,163,1) 57%, rgba(143,146,166,1) 63%, rgba(146,149,168,1) 70%, rgba(150,153,171,1) 74%, rgba(12,25,82,1) 91%); */
 /* background: linear-gradient(180deg, rgba(12,25,82,1) 11%, rgba(150,153,171,1) 84%); */
 background: linear-gradient(0deg, rgba(12,25,82,1) 11%, rgba(150,153,171,1) 84%);
+}
+.sidebg{
+  background-image: linear-gradient(to bottom, #c0b5e9, #9587c3, #6c5b9e, #443279, #1a0a56);
 }
 .dtext{
   color: black;
@@ -177,7 +182,7 @@ background: linear-gradient(90deg, rgba(12,25,82,1) 11%, #f08800 60%, rgba(12,25
   margin: 5% auto;
   height: 430px;
   background: white;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 

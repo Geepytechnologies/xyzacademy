@@ -17,11 +17,11 @@ import Events from '../components/Events'
 
 export default function Home() {
   const popup = useRef();
-  useEffect(()=>{
+ /*  useEffect(()=>{
     setTimeout(()=>{
       popup.current.style.display = 'block'
     },10000)
-  },[])
+  },[]) */
   const hide = () =>{
     popup.current.style.display = 'none'
   }
